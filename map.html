@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Taishan Map</title>
+    <style>
+      /* Mini CSS reset. */
+      body {
+        margin: 0;
+      }
+
+      .viewport {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .map-container {
+        position: relative;
+      }
+
+      .map {
+        width: 100%;
+        vertical-align: middle;
+      }
+
+      .marker {
+        position: absolute;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .location-text {
+        background: lightgray;
+      }
+
+      .location-text:hover {
+        cursor: pointer;
+        background: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="viewport">
+      <!--
+        This wrapper is necessary since percentage-based offsets in absolute
+        positioning are based on a relatively-positioned containing block.
+      -->
+      <div class="map-container">
+        <img class="map" src="images/taishan-map.png">
+        <svg class="marker hidden" width="20" height="20" viewBox="0 0 100 100">
+          <path fill="red"
+                d="M50 100
+                   L0 33
+                   L100 33
+                   L50 100" />
+        </svg>
+      </div>
+      <ul>
+        <li>This is a map of the entire county. Each square represents 10
+          Chinese miles. The middle line of the <span class="location-text"
+          data-map-coords="56.2,62">county seat</span> is 180 Chinese miles to the
+          south of the capital of the province.</li>
+        <li>The <span class="location-text" data-map-coords="7,20.5">mountain
+            range</span>, which is 150 Chinese miles to the west, runs west to
+            east. <span class="location-text"
+            data-map-coords="72.2,54.7">Shizitou</span> and other peaks raise their
+            heads high majesitcally in the east.</li>
+        <li>(The rest is not transcribed here as this is just a prototype.)</li>
+      </ul>
+    </div>
+    <script type="module">
+      const marker = document.querySelector('.marker');
+      const locationTexts = document.querySelectorAll('.location-text');
+      for (const locationText of locationTexts) {
+        // 0,0 can be a default location.
+        const mapCoords = (locationText.dataset.mapCoords || '0,0').split(',');
+        // This measurement should be from the bottom-center of the marker.
+        // Adjust for that. The marker's width is assumed to be 20px.
+        const left = `calc(${mapCoords[0]}% - 10px)`;
+        const bottom = mapCoords[1] + "%";
+
+        locationText.addEventListener('click', (ev) => {
+          // If the marker is already in the right place, then a click toggles
+          // visibility. Otherwise we always move and make visible.
+          if (marker.style.left === left && marker.style.bottom === bottom ) {
+            marker.classList.toggle('hidden');
+          } else {
+            marker.classList.remove('hidden');
+            // Move to the specified coordinates. The bottom-left corner is 0,0.
+            marker.style.left = left;
+            marker.style.bottom = bottom;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
