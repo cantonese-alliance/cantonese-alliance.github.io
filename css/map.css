@@ -1,0 +1,163 @@
+/*
+ Global styling
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+:root {
+  --primary-color: #ffcd582a;
+  --title-color: #ff5c4d;
+  --description-background-color: #ffcd583a;
+}
+
+/* 
+    cover
+  */
+.cover {
+  height: 600px;
+  color: var(--title-color);
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.cover h1 {
+  font-size: 40px;
+  margin: 0 40px;
+}
+
+.cover .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+}
+
+/* 
+    Map 
+  */
+.viewport {
+  background-color: var(--primary-color);
+  margin: 0;
+  display: grid;
+}
+
+.viewport .grid {
+  grid-template-columns: 70% 30%;
+}
+
+.map-container {
+  position: -webkit-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.marker {
+  position: absolute;
+  transform: scale(2);
+}
+
+.hidden {
+  display: none;
+}
+
+.location-text {
+  background: #dad87050;
+}
+
+.location-text:hover {
+  cursor: pointer;
+  background: #ffbb96;
+}
+
+.descriptions {
+  height: 90%;
+  border-width: 3px;
+  border-style: solid;
+  padding: 0;
+  border-color: red;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--description-background-color);
+}
+
+.hint {
+  font-size: 16px;
+  margin: 20px 10px 0px 20px;
+  color: var(--title-color);
+  font-weight: bold;
+}
+
+ul {
+  height: 100%;
+  padding: 20px 50px;
+  position: relative;
+}
+
+/*
+    Carousel
+  */
+.carousel {
+  height: 88%;
+  width: 100%;
+  padding: 0px 0;
+  justify-content: center;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  color: black;
+  display: block;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  height: 100%;
+  color: var(--primary-color);
+}
+
+.flickity-viewport {
+  height: 100%;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background: var(--primary-color);
+}

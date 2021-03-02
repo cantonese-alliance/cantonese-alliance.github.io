@@ -1,94 +1,215 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Taishan Map</title>
-    <style>
-      /* Mini CSS reset. */
-      body {
-        margin: 0;
-      }
-
-      .viewport {
-        max-width: 960px;
-        margin: 0 auto;
-      }
-
-      .map-container {
-        position: relative;
-      }
-
-      .map {
-        width: 100%;
-        vertical-align: middle;
-      }
-
-      .marker {
-        position: absolute;
-      }
-
-      .hidden {
-        display: none;
-      }
-
-      .location-text {
-        background: lightgray;
-      }
-
-      .location-text:hover {
-        cursor: pointer;
-        background: gray;
-      }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cantonese Map Test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/map.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
   </head>
   <body>
-    <div class="viewport">
-      <!--
-        This wrapper is necessary since percentage-based offsets in absolute
-        positioning are based on a relatively-positioned containing block.
-      -->
-      <div class="map-container">
-        <img class="map" src="images/taishan-map.png">
-        <svg class="marker hidden" width="20" height="20" viewBox="0 0 100 100">
-          <path fill="red"
-                d="M50 100
-                   L0 33
-                   L100 33
-                   L50 100" />
-        </svg>
+    <section class="cover">
+      <div class="container grid">
+        <h1>新寧縣圖</h1>
       </div>
-      <ul>
-        <li>This is a map of the entire county. Each square represents 10
-          Chinese miles. The middle line of the <span class="location-text"
-          data-map-coords="56.2,62">county seat</span> is 180 Chinese miles to the
-          south of the capital of the province.</li>
-        <li>The <span class="location-text" data-map-coords="7,20.5">mountain
-            range</span>, which is 150 Chinese miles to the west, runs west to
-            east. <span class="location-text"
-            data-map-coords="72.2,54.7">Shizitou</span> and other peaks raise their
-            heads high majesitcally in the east.</li>
-        <li>(The rest is not transcribed here as this is just a prototype.)</li>
-      </ul>
-    </div>
+    </section>
+    <section class="viewport">
+      <div class="container grid">
+        <!--
+          This wrapper is necessary since percentage-based offsets in absolute
+          positioning are based on a relatively-positioned containing block.
+        -->
+        <div class="map-container">
+          <img class="map" src="./images/taishan-map.png" />
+          <svg
+            class="marker hidden"
+            width="20"
+            height="20"
+            viewBox="0 0 100 100"
+          >
+            <path
+              fill="red"
+              d="M32 2a18 18 0 0 0-18 18 18.1 18.1 0 0 0 .2 2.2C15.7 36.8 32 44.9 32 62c0-17.1 16.3-25.2 17.8-39.7A17.9 17.9 0 0 0 32 2zm0 24a6 6 0 1 1 6-6 6 6 0 0 1-6 6z"
+            />
+          </svg>
+        </div>
+        <div class="descriptions">
+          <div class="hint">Click the place name to show map marker!</div>
+          <div class="carousel js-flickity">
+            <div class="carousel-cell">
+              <ul>
+                <li>
+                  This is a map of the entire county. Each square represents 10
+                  Chinese miles. The middle line of the
+                  <span class="location-text" data-map-coords="57,61"
+                    >county seat 縣城 [MM]</span
+                  >
+                  is 180 Chinese miles to the south of the capital of the
+                  province.
+                </li>
+                <li>
+                  The
+                  <span class="location-text" data-map-coords="15,51"
+                    >mountain range</span
+                  >, which is 150 Chinese miles to the west, runs west to east.
+                  <span class="location-text" data-map-coords="74,53.5"
+                    >Shizitou 獅子頭</span
+                  >
+                  and other peaks raise their heads high majesitcally in the
+                  east.
+                </li>
+                <li>
+                  The peaks in
+                  <span class="location-text" data-map-coords="43,41"
+                    >Dalong 大隆 [W3S7]</span
+                  >
+                  are high in the west and the spine of the mountain range ends
+                  at
+                  <span class="location-text" data-map-coords="60.8,56"
+                    >Wangshexing 王蛇形 [E1S1]</span
+                  >
+                  which together with other peaks cuts across the spine
+                  horizontally. The various mountains in
+                  <span class="location-text" data-map-coords="71,39"
+                    >Haiyan 海晏 [E4S7] (Not found)</span
+                  >
+                  and
+                  <span class="location-text" data-map-coords="63,39"
+                    >Guanghai 廣海 [E1S7]</span
+                  >
+                  form a branch.
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-cell">
+              <ul>
+                <li>
+                  Those in
+                  <span class="location-text" data-map-coords="48.8,59"
+                    >Sanhe 三合 [W2S1]</span
+                  >
+                  and
+                  <span class="location-text" data-map-coords="43,61"
+                    >Chaojing 潮景 [W4M] (Not sure)</span
+                  >
+                  form another branch. Most of the mountain ranges that occupy
+                  the west run east. Those in
+                  <span class="location-text" data-map-coords="69,45.7"
+                    >Fushi 浮石 [E3S5]</span
+                  >
+                  and
+                  <span class="location-text" data-map-coords="68.2,47"
+                    >Beimenjing 北門逕[E3S4]</span
+                  >
+                  form a branch.
+                </li>
+                <li>
+                  The various mountains near the county seat and
+                  <span class="location-text" data-map-coords="53.2, 66"
+                    >Yaji 丫髻山 [W1N1-W1N2]
+                  </span>
+                  Mountain form another branch. The mountains that occupy the
+                  east tend to run west.
+                </li>
+                <li>
+                  Other than these, the mountains at
+                  <span class="location-text" data-map-coords="14.5,19.6"
+                    >Da'ao 大澳 [W11S13]</span
+                  >
+                  form a branch. The mountains along the four borders are like
+                  scales.
+                  <span class="location-text" data-map-coords="64,18"
+                    >Shangchuang Island M-E4 S10-14</span
+                  >
+                  and
+                  <span class="location-text" data-map-coords="46,16"
+                    >Xiachuan Islan 上川 [W1-5, S12-14]</span
+                  >
+                  tower far away in the sea.
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-cell">
+              <ul>
+                <li>
+                  Furthermore, the waterways in the county are divided into the
+                  northern and southern branches. The rivers in the northern
+                  branch meet at
+                  <span class="location-text" data-map-coords="47.5,70.5"
+                    >Di Sea 荻海 [W3N3]</span
+                  >
+                  while the ones in the southern branch converge at
+                  <span class="location-text" data-map-coords="68,42"
+                    >Sancha Sea 三叉海 [E3S5] (should be E3S5)</span
+                  >.
+                </li>
+                <li>
+                  Others such as deep ponds, streams, and rivers flow through to
+                  the sea at both their sources and mouths.
+                  <span class="location-text" data-map-coords="73.2,53.7"
+                    >River Nafu 那扶 [W10N4] (not exist)</span
+                  >
+                  flows straight down to a big sea, making it convenient (to
+                  travel) in that direction.
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-cell">
+              <ul>
+                <li>
+                  The terrain in the entire county is high in the central part
+                  with rugged hillsides slanting downwards to steep hills in the
+                  north and south.
+                </li>
+                <li>
+                  Sand sediment accumulated in the water and dried-up rivers
+                  make it difficult for boats to travel through narrow and
+                  twisted paths.
+                </li>
+                <li>
+                  Laborers who walk on foot and are carrying poles need to
+                  especially avoid these areas.
+                </li>
+                <li>
+                  Carefully recorded by Zhao Tianxi in the first 10 days of the
+                  9th lunar month in 1893 during the reign of Guangxu Emperor.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a href="mailto:lcheung2@stanford.edu">lcheung2@stanford.edu</a>
+    </footer>
+    <section class="showcase"></section>
     <script type="module">
-      const marker = document.querySelector('.marker');
-      const locationTexts = document.querySelectorAll('.location-text');
+      const marker = document.querySelector(".marker");
+      const locationTexts = document.querySelectorAll(".location-text");
       for (const locationText of locationTexts) {
         // 0,0 can be a default location.
-        const mapCoords = (locationText.dataset.mapCoords || '0,0').split(',');
+        const mapCoords = (locationText.dataset.mapCoords || "0,0").split(",");
         // This measurement should be from the bottom-center of the marker.
         // Adjust for that. The marker's width is assumed to be 20px.
         const left = `calc(${mapCoords[0]}% - 10px)`;
         const bottom = mapCoords[1] + "%";
 
-        locationText.addEventListener('click', (ev) => {
+        locationText.addEventListener("click", (ev) => {
           // If the marker is already in the right place, then a click toggles
           // visibility. Otherwise we always move and make visible.
-          if (marker.style.left === left && marker.style.bottom === bottom ) {
-            marker.classList.toggle('hidden');
+          if (marker.style.left === left && marker.style.bottom === bottom) {
+            marker.classList.toggle("hidden");
           } else {
-            marker.classList.remove('hidden');
+            marker.classList.remove("hidden");
             // Move to the specified coordinates. The bottom-left corner is 0,0.
             marker.style.left = left;
             marker.style.bottom = bottom;
@@ -96,5 +217,9 @@
         });
       }
     </script>
+    <script
+      defer
+      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+    ></script>
   </body>
 </html>
