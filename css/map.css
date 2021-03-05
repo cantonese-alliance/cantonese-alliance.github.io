@@ -38,7 +38,7 @@ body {
     cover
   */
 .cover {
-  height: 600px;
+  height: 200px;
   color: var(--title-color);
   background-color: var(--primary-color);
   position: relative;
