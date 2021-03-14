@@ -5,567 +5,638 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/general.css" type="text/css">
 <link rel="stylesheet" href="css/font.css" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
 <style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
 </style>
+
 <body class="w3-light-grey">
 
-<!-- Top container -->
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
-  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="w3-bar-item w3-right">
-    Search Button
-    </span>
+    <!-- Top container -->
+    <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+            onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+        <span class="w3-bar-item w3-right">
+            Search Button
+        </span>
     </div>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container w3-row">
-    <div class="w3-col s4">
-      <!--<img src="/images/logo" class="w3-circle w3-margin-right" style="width:46px">-->
-    </div>
-     <h4>Community Links</h4>
-      <a href="mailto:lcheung2@stanford.edu" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-    
-  </div>
-  <hr>
-  <div class="w3-container">
-    <h5>Dashboard</h5>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-    <a href="index.html" href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw"></i>  Home</a>
-      <a href="courses.html" href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i>  Courses</a>
-    <a href="instructor.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-circle fa-fw"></i>  Instructor</a>
-    <a href="about_canto.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  About Cantonese</a>
-    <a href="language.html" class="w3-bar-item w3-button w3-padding "><i class="fa fa-diamond fa-fw"></i>  Language Resources</a>
-    <a href="community.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Comminutiy Links</a>
-    <a href="heritage.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  Heritage Language</a>
-    <a href="map.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw"></i>  Map</a>
-   <br><br>
-  </div>
-</nav>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container w3-row">
+            <div class="w3-col s4">
+                <!--<img src="/images/logo" class="w3-circle w3-margin-right" style="width:46px">-->
+            </div>
+            <h4>Community Links</h4>
+            <a href="mailto:lcheung2@stanford.edu" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
 
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px;margin-top:43px;">
-
-  <!-- Header -->
-  <header class="w3-container" style="padding-top:22px">
-      <div class="w3-container w3-padding-16"> <h1><b>Community Links</b></h1> </div>
-  </header>
-  <div class="w3-row">
-    <div class="w3-container">
+        </div>
+        <hr>
         <div class="w3-container">
-            
-         <h3 class="w3-text-blue-grey"><b>Cantonese Classes, Certification, and Other Support in Local Communities </b></h3>
-    <div class="w3-container w3-white  w3-twothird">
-         <h5>Bilingual Authorization in Cantonese with Multiple Subject Teaching Credential, California</h5>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="https://gcoe.sfsu.edu/dcp/bilingual-authorization-spanish-cantonese-and-mandarin-multiple-subject-teaching-credential" rel="nofollow">
-                                                                   Graduate College of education, San Francisco State University
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>Cantonese-English Bilingual Programs offered by San Francisco Public Schools</h5>
-                                                        <ul>
-                                                            <li>
-                                                    
-                                                                    <a href="http://www.sfusd.edu/en/enroll-in-sfusd-schools/language-pathways.html" rel="nofollow">San Francisco Unified School District</a>
-                                                         
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="http://www.sfusd.edu/en/enroll-in-sfusd-schools/language-assessment.html" rel="nofollow">
-                                                                           Language Assessment Tests for Cantonese and other languages
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                       
-                                                                            <a href="http://newamericamedia.org/2012/10/demand-for-cantonese-services-high-at-city-college.php" rel="nofollow">Over 75% of all of the Chinese children served by this school district are Cantonese speakers</a>
-                                                                            .
-                                                                      
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>Cantonese Classes Offered by Community Colleges and Other Public Schools</h5>
-                                                        <ul>
-                                                            <li>
-                                                         
-                                                                    <a href="https://www.ccsf.edu/en/educational-programs/school-and-departments/school-of-english-foreign-languages/foreign-languages/programs/chinese.html" rel="nofollow">
-                                                                       City College of San Francisco                </a>
-                                                            
-                                                            </li>
-                                                            <li>
-                                                                <a href="http://alameda.peralta.edu/college-catalog/files/2015/08/Chinese.pdf" rel="nofollow">College of Alameda
-                                                                </a>
-                                                                <ul>
-                                                                    <li>
-                                            
-                                                                                According to their college catalog: 
-                                                                                <a href="http://alameda.peralta.edu/college-catalog/files/2015/08/Chinese.pdf" rel="nofollow">"The Cantonese Program at COA provides courses that satisfy Foreign Language requirements at 4-year colleges and universities, provides marketable foreign language skills and offers cultural enrichment."</a>
-
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                <a href="http://www.ousd.org/Page/5599" rel="nofollow">
-                                                                    Oakland High School
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>Cantonese Classes Offered by Community Organizations</h5>
-                                                        <ul>
-                                                            <li>
-                                                  
-                                                                        <a href="https://www.facebook.com/pg/AmericanChineseSchool/about/?ref=page_internal" rel="nofollow">育才中文學校 American Chinese School</a>
-                                                              
-                                                            </li>
-                                                            <li>
-                                                             
-                                                                        <a href="https://www.wvcls.org/" rel="nofollow">西谷中文學校 West Valley Chinese Language School</a>
-                                                               
-                                                            </li>
-                                                            <li>
-                                                                <a href="http://www.booksandme.org/index_eng.html" rel="nofollow">
-                                                                   親子書坊 Books and Me
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>
-                                                            <a href="https://ealc.berkeley.edu/courses/description/spring-2021/chinese" rel="nofollow">
-                                                            Cantonese at UC Berkeley
-                                                            </a>
-                                                        </h5>
-                                                        <ul>
-                                                            <li>
-                                                                <p>
-                                                                   Chinese 3A and 3B: Elementary Cantonese, 4 units/semester
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p>
-                                                                   Chinese 3X: Elementary Cantonese for Heritage Speakers, 4 units
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                        <h5>
-                                                            Cantonese at San Jose State University
-                                                        </h5>
-                                                        <ul>
-                                                            <li>
-                                                    
-                                                                    Cantonese can be used to fulfill 
-                                                                    <a href="http://info.sjsu.edu/web-dbgen/artic/DEANZA/template-20.html" rel="nofollow">Chinese Majors' second world language requirement</a>
-                                                                    : "Chinese Majors must also take one year of a second world language, ancient or modern (or the equivalent; conversational Cantonese fulfills this requirement). Have your counselor check with the SJSU Department of World Languages and Literatures for approval of second language."
-                                                        
-                                                            </li>
-                                                        </ul>
-                                                        <h5>
-                                                            Cantonese Storytime
-                                                        </h5>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="https://smcl.bibliocommons.com/events/5a72448a09cd133e009d45dc" rel="nofollow">
-                                                              
-                                                                       San Carlos Library, Saturdays, 10:30 AM - 11:00 AM
-                                                      
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-        
-    </div>
-            
-        
-        <div class="w3-container w3-third">
-           <p class="w3-center">
-                    <img alt="" src="https://cantonese.sites.stanford.edu/sites/g/files/sbiybj11251/f/styles/large-scaled/public/golden-gate-bridge_san-francisco-CareyBassCC.jpg"/>
-            </p>
+            <h5>Dashboard</h5>
         </div>
- </div>
-       <br> 
-       <div class="w3-container  w3-padding-16"> 
-       <h3 class="w3-text-blue-grey"><b>Cantonese Programs for Heritage or Foreign Language Learners in Other Locations (A Sample)</b></h3>
-            <div class="w3-container w3-twothird w3-white">
-        <ul>
-                                                            <li>
-                                                       
-                                                                    <a href="http://www.cuhk.edu.hk/clc/e_cantonese.htm" rel="nofollow">U.S.:</a>
-                                           
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="https://cls.byu.edu/department/112" rel="nofollow">
-                                                                           Brigham Young University
-                                                                        </a>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <a href="http://flats.byu.edu/langlist.php?x=3" rel="nofollow">
-                                                                                  Foreign Language Achievement Test in Cantonese
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="http://courses.cornell.edu/search_advanced.php?cur_cat_oid=26&amp;search_database=Search&amp;search_db=Search&amp;cpage=1&amp;ecpage=1&amp;ppage=1&amp;spage=1&amp;tpage=1&amp;location=33&amp;filter%5Bkeyword%5D=Cantonese" rel="nofollow">
-                                                                            Cornell University
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="https://easc.osu.edu/courses/language/chinese" rel="nofollow">
-                                                                           Ohio State University                               </a>
-                                                                    </li>
-                                                                    <li>
-                                                                       New York University
-                                                                        <ul>
-                                                                            <li>
-                                                                                <a href="http://cas.nyu.edu/page/placementexams" rel="nofollow">
-                                                                                 Placement Test in Cantonese
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="http://www.scps.nyu.edu/academics/departments/foreign-languages/testing.html" rel="nofollow">
-                                                                                 Proficiency Test in Cantonese
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <p>
-                                                                                    <a href="http://speakingfreely.cas.nyu.edu/page/home" rel="nofollow">
-                                                                                 "Speaking Freely: Travel Without a Suitcase" teaches languages including Cantonese
-                                                                                    </a>
-                                                                                </p>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                   
-                                                                    <a href="http://www.cuhk.edu.hk/clc/e_cantonese.htm" rel="nofollow">Overseas:</a>
-                                                         
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="http://asia.ubc.ca/undergraduate/courses/cantonese/" rel="nofollow">
-                                                                            University of British Columbia (UBC)
-                                                                        </a>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <a href="http://asia.ubc.ca/undergraduate/placement-tests/" rel="nofollow">
-                                                                                  Cantonese Placement Test
-                                                                                </a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="http://students.arts.ubc.ca/advising/degree-requirements/language-requirement/" rel="nofollow">
-                                                                                 Cantonese to fulfill UBC's foreign language requirement               </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="http://learn.utoronto.ca/courses-programs/languages-translation/courses/cantonese" rel="nofollow">
-                                                                           University of Toronto- School of Continuing Studies
-                                                                        </a>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <a href="http://learn.utoronto.ca/courses-programs/languages-translation/certificates" rel="nofollow">
-                                                                                 Language and Translation Certificates in Cantonese
-                                                                                </a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>
+        <div class="w3-bar-block">
+            <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
+                onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+            <a href="index.html" href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw"></i> 
+                Home</a>
+            <a href="courses.html" href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i> 
+                Courses</a>
+            <a href="instructor.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-circle fa-fw"></i> 
+                Instructor</a>
+            <a href="about_canto.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i> 
+                About Cantonese</a>
+            <a href="language.html" class="w3-bar-item w3-button w3-padding "><i class="fa fa-diamond fa-fw"></i> 
+                Language Resources</a>
+            <a href="community.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i> 
+                Comminutiy Links</a>
+            <a href="heritage.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  Heritage
+                Language</a>
+            <a href="map.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw"></i>  Map</a>
+            <br><br>
+        </div>
+    </nav>
 
-                                                                                <a href="http://www.cuhk.edu.hk/clc/e_cantonese.htm" rel="nofollow">Chinese University of Hong Kong</a>
-                                                                           
-                                                            
-                                                                    </li>
-                                                                    <li>
-                                                                    <a href="http://www.hklanguages.com/the-institute/about-us/about-us1.html" rel="nofollow">Hong Kong Institute of Languages</a>
-                                                                          
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                        <p>
-                                   
-                                                                    For a complete list of "Cantonese Programs Around the World", please visit 
-                                                                    <a href="https://cantoneselanguageassociation.byu.edu/cantonese-programs-around-the-world/" rel="nofollow">Cantonese Language Association</a>.
-                                                        </p>
-                                                  
-                </div>   
-         
-           
-           </div>
-   
 
-      
-         <div class="w3-container w3-padding-16">
-       <h3 class="w3-text-blue-grey"><b>Community Groups</b></h3>
-            <div class="w3-container w3-twothird w3-white w3-padding-16">
-              <ul>
-                                                            <li>
-                                                        
-                                                                    <a href="http://www.meetup.com/San-Francisco-Bay-Area-Cantonese-Enthusiasts/" rel="nofollow">The San Francisco Cantonese Enthusiasts</a>
-                                                   
-                                                            </li>
-                                                            <li>
-                                                             Facebook groups for Cantonese parents
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="https://www.facebook.com/groups/southbaycantoneseparents/?ref=br_rs" rel="nofollow">
-                                                                           Cantonese Parents - SF Bay Area - South Bay
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="https://www.facebook.com/groups/CantoneseParents/?ref=br_rs" rel="nofollow">
-                                                                           Cantonese Parents
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>                                         
-                                                       
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+        <!-- Header -->
+        <header class="w3-container" style="padding-top:22px">
+            <div class="w3-container w3-padding-16">
+                <h1><b>Community Links</b></h1>
+            </div>
+        </header>
+        <div class="w3-row">
+            <div class="w3-container">
+                <div class="w3-container">
+
+                    <h3 class="w3-text-blue-grey"><b>Cantonese Classes, Certification, and Other Support in Local
+                            Communities </b></h3>
+                    <div class="w3-container w3-white  w3-twothird">
+                        <h5>Bilingual Authorization in Cantonese with Multiple Subject Teaching Credential, California
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="https://gcoe.sfsu.edu/dcp/bilingual-authorization-spanish-cantonese-and-mandarin-multiple-subject-teaching-credential"
+                                    rel="nofollow">
+                                    Graduate College of education, San Francisco State University
+                                </a>
+                            </li>
+                        </ul>
+                        <h5>Cantonese-English Bilingual Programs offered by San Francisco Public Schools</h5>
+                        <ul>
+                            <li>
+
+                                <a href="http://www.sfusd.edu/en/enroll-in-sfusd-schools/language-pathways.html"
+                                    rel="nofollow">San Francisco Unified School District</a>
+
+                                <ul>
+                                    <li>
+                                        <a href="http://www.sfusd.edu/en/enroll-in-sfusd-schools/language-assessment.html"
+                                            rel="nofollow">
+                                            Language Assessment Tests for Cantonese and other languages
+                                        </a>
+                                    </li>
+                                    <li>
+
+                                        <a href="http://newamericamedia.org/2012/10/demand-for-cantonese-services-high-at-city-college.php"
+                                            rel="nofollow">Over 75% of all of the Chinese children served by this school
+                                            district are Cantonese speakers</a>
+                                        .
+
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h5>Cantonese Classes Offered by Community Colleges and Other Public Schools</h5>
+                        <ul>
+                            <li>
+
+                                <a href="https://www.ccsf.edu/en/educational-programs/school-and-departments/school-of-english-foreign-languages/foreign-languages/programs/chinese.html"
+                                    rel="nofollow">
+                                    City College of San Francisco </a>
+
+                            </li>
+                            <li>
+                                <a href="http://alameda.peralta.edu/college-catalog/files/2015/08/Chinese.pdf"
+                                    rel="nofollow">College of Alameda
+                                </a>
+                                <ul>
+                                    <li>
+
+                                        According to their college catalog:
+                                        <a href="http://alameda.peralta.edu/college-catalog/files/2015/08/Chinese.pdf"
+                                            rel="nofollow">"The Cantonese Program at COA provides courses that satisfy
+                                            Foreign Language requirements at 4-year colleges and universities, provides
+                                            marketable foreign language skills and offers cultural enrichment."</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://www.ousd.org/Page/5599" rel="nofollow">
+                                    Oakland High School
+                                </a>
+                            </li>
+                        </ul>
+                        <h5>Cantonese Classes Offered by Community Organizations</h5>
+                        <ul>
+                            <li>
+
+                                <a href="https://www.facebook.com/pg/AmericanChineseSchool/about/?ref=page_internal"
+                                    rel="nofollow">育才中文學校 American Chinese School</a>
+
+                            </li>
+                            <li>
+
+                                <a href="https://www.wvcls.org/" rel="nofollow">西谷中文學校 West Valley Chinese Language
+                                    School</a>
+
+                            </li>
+                            <li>
+                                <a href="http://www.booksandme.org/index_eng.html" rel="nofollow">
+                                    親子書坊 Books and Me
+                                </a>
+                            </li>
+                        </ul>
+                        <h5>
+                            <a href="https://ealc.berkeley.edu/courses/description/spring-2021/chinese" rel="nofollow">
+                                Cantonese at UC Berkeley
+                            </a>
+                        </h5>
+                        <ul>
+                            <li>
+                                <p>
+                                    Chinese 3A and 3B: Elementary Cantonese, 4 units/semester
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Chinese 3X: Elementary Cantonese for Heritage Speakers, 4 units
+                                </p>
+                            </li>
+                        </ul>
+                        <h5>
+                            Cantonese at San Jose State University
+                        </h5>
+                        <ul>
+                            <li>
+
+                                Cantonese can be used to fulfill
+                                <a href="http://info.sjsu.edu/web-dbgen/artic/DEANZA/template-20.html"
+                                    rel="nofollow">Chinese Majors' second world language requirement</a>
+                                : "Chinese Majors must also take one year of a second world language, ancient or modern
+                                (or the equivalent; conversational Cantonese fulfills this requirement). Have your
+                                counselor check with the SJSU Department of World Languages and Literatures for approval
+                                of second language."
+
+                            </li>
+                        </ul>
+                        <h5>
+                            Cantonese Storytime
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="https://smcl.bibliocommons.com/events/5a72448a09cd133e009d45dc" rel="nofollow">
+
+                                    San Carlos Library, Saturdays, 10:30 AM - 11:00 AM
+
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="w3-container w3-third">
+                        <p class="w3-center">
+                            <img alt=""
+                                src="https://cantonese.sites.stanford.edu/sites/g/files/sbiybj11251/f/styles/large-scaled/public/golden-gate-bridge_san-francisco-CareyBassCC.jpg" />
+                        </p>
+                    </div>
                 </div>
- 
-           
-           </div>
-  
-           
-           <div class="w3-container  w3-padding-16">
-       <h3 class="w3-text-blue-grey"><b>Cultural Centers and Associations</b></h3>
-            <div class="w3-container w3-twothird w3-white w3-padding-16">
-            <ul>
-                                                            <li>
-                                             
-                                                                    <a href="https://cantoneselanguageassociation.byu.edu/" rel="nofollow">Cantonese Language Association</a>
-                                                            </li>
-                                                            <li>
-                                                                    <a href="http://cpasf.org/" rel="nofollow">Chinese Progressive Association-San Francisco</a>
-                                                            </li>
-                                                            <li>
-                                                                    <a href="http://www.chsa.org/" rel="nofollow">Chinese Historical Society of America</a>
-                                                            </li>
-                                                            <li>
-                                                                    <a href="http://www.c-c-c.org/" rel="nofollow">Chinese Culture Center-San Francisco</a>
-                                                            </li>
-                                                            <li>
-                                                                    <a href="http://www.hkanc.com/" rel="nofollow">Hong Kong Association of Northern California</a>
-                                                            </li>
-                                                            <li>
-                                                                    <a href="https://nacsainfo11.wordpress.com/2015/04/12/welcome/" rel="nofollow">North American Chinese Sociologists Association</a>
-                                                            </li>
-                                                            <li>
-                                                                    <a href="http://www.pbs.org/kqed/chinatown/resourceguide/cmmtyorg.html/" rel="nofollow">San Francisco Chinatown Resource Guide: Community Organizations</a>
-                                                            </li>
-                                                        </ul>
-        
-        </div>      
-               
-           
-           </div>
-        
-        
-        
-         <div class="w3-container  w3-padding-16">
-       <h3 class="w3-text-blue-grey"><b>On-Campus Departments</b></h3>
-            <div class="w3-container w3-twothird w3-white w3-padding-16">
-            
-         <h4>
-                                                            Chinese Railroad Workers in North America Project: the majority of the workers were Cantonese speakers</a>
-                                                        </h4>
-                                                        <ul>
-                                                            <li>
-                                                                    <a href="http://web.stanford.edu/group/chineserailroad/cgi-bin/wordpress/people/">People in the project</a>
-                                                       
-                                                            </li>
-                                                            <li>
-                                                 
-                                                                    <a href="http://web.stanford.edu/group/chineserailroad/cgi-bin/wordpress/press/">Press releases</a>
-                                                          
-                                                            </li>
-                                                        </ul>
-                                                        <h4>
-                                                            Stanford Archaeology Center</a>
-                                                        </h4>
-                                                        <ul>
-                                                            <li>
-                                                
-                                                                    <a href="https://archaeology.stanford.edu/">Stanford Archaeology Center Main Page</a>
-                                    
-                                                            </li>
-                                                            <li>
-                                   
-                                                                    <a href="http://events.stanford.edu/events/636/63637/">Past Event about Cantonese people: Association Heritage in Early Chinatowns in North America</a>
-                                    
-                                                            </li>
-                                                        </ul>
-                                                        <h4>
-                                                            Center for East Asian Studies</a>
-                                                        </h4>
-                                                        <ul>
-                                                            <li>
-                                                         
-                                                                    <a href="http://ceas.stanford.edu/">CEAS Main Page</a>
-                                                    
-                                                            </li>
-                                                            <li>
-                                         
-                                                                    <a href="http://ceas.stanford.edu/events/index.php">Upcoming Events</a>
-                                          
-                                                            </li>
-                                                            <li>
-                                       
-                                                                    <a href="http://ceas.stanford.edu/students/east-asia-internships.php">East Asia Internships</a>
-                                    
-                                                            </li>
-                                                        </ul>
-                                                        <h4>Division of Literatures, Cultures, and Languages</h4>
-                                                        <ul>
-                                                            <li>
-             
-                                                                    <a href="https://dlcl.stanford.edu/">DLCL Main Page</a>
-                          
-                                                            </li>
-                                                            <li>
-                 
-                                                                    <a href="https://www.stanford.edu/dept/lc/language/">Stanford Language Center</a>
-        
-                                                            </li>
-                                                        </ul>
-                                                        <h4>
-                                                            East Asian Languages and Cultures</a>
-                                                        </h4>
-                                                        <ul>
-                                                            <li>
-            
-                                                                    <a href="http://www.stanford.edu/dept/asianlang/cgi-bin/index.php">EAS Main Page</a>
-                                                    
-                                                            </li>
-                                                            <li>
-                       
-                                                                    <a href="http://www.stanford.edu/dept/asianlang/cgi-bin/people/bios/sun_chaofen.php">Professor Chaofen Sun</a>
-                     
-                                                            </li>
-                                                        </ul>
-                                                        <h4>
-                                                            The Stanford Chinese Program</a>
-                                                        </h4>
-                                                        <ul>
-                                                            <li>
-                                      
-                                                                    <a href="https://language.stanford.edu/programs/chinese">Main Page</a>
-                                                           
-                                                            </li>
-                                                            <li>
-                                            
-                                                                    <a href="http://www.stanford.edu/dept/asianlang/cgi-bin/people/bios/sun_chaofen.php">Professor Chaofen Sun</a>
-                                                       
-                                                            </li>
-                                                        </ul>
-        </div>   
-             
-              <div class="w3-container w3-third">
-           <p class="w3-center">
-                    <img alt="" src="https://cantonese.sites.stanford.edu/sites/g/files/sbiybj11251/f/styles/large-scaled/public/Quad_tall_palms.png"/>
-                                         
-            </p>
+                <br>
+                <div class="w3-container  w3-padding-16">
+                    <h3 class="w3-text-blue-grey"><b>Cantonese Programs for Heritage or Foreign Language Learners in
+                            Other Locations (A Sample)</b></h3>
+                    <div class="w3-container w3-twothird w3-white">
+                        <ul>
+                            <li>
+
+                                <a href="http://www.cuhk.edu.hk/clc/e_cantonese.htm" rel="nofollow">U.S.:</a>
+
+                                <ul>
+                                    <li>
+                                        <a href="https://cls.byu.edu/department/112" rel="nofollow">
+                                            Brigham Young University
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="http://flats.byu.edu/langlist.php?x=3" rel="nofollow">
+                                                    Foreign Language Achievement Test in Cantonese
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="http://courses.cornell.edu/search_advanced.php?cur_cat_oid=26&amp;search_database=Search&amp;search_db=Search&amp;cpage=1&amp;ecpage=1&amp;ppage=1&amp;spage=1&amp;tpage=1&amp;location=33&amp;filter%5Bkeyword%5D=Cantonese"
+                                            rel="nofollow">
+                                            Cornell University
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://easc.osu.edu/courses/language/chinese" rel="nofollow">
+                                            Ohio State University </a>
+                                    </li>
+                                    <li>
+                                        New York University
+                                        <ul>
+                                            <li>
+                                                <a href="http://cas.nyu.edu/page/placementexams" rel="nofollow">
+                                                    Placement Test in Cantonese
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.scps.nyu.edu/academics/departments/foreign-languages/testing.html"
+                                                    rel="nofollow">
+                                                    Proficiency Test in Cantonese
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    <a href="http://speakingfreely.cas.nyu.edu/page/home"
+                                                        rel="nofollow">
+                                                        "Speaking Freely: Travel Without a Suitcase" teaches languages
+                                                        including Cantonese
+                                                    </a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+
+                                <a href="http://www.cuhk.edu.hk/clc/e_cantonese.htm" rel="nofollow">Overseas:</a>
+
+                                <ul>
+                                    <li>
+                                        <a href="http://asia.ubc.ca/undergraduate/courses/cantonese/" rel="nofollow">
+                                            University of British Columbia (UBC)
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="http://asia.ubc.ca/undergraduate/placement-tests/"
+                                                    rel="nofollow">
+                                                    Cantonese Placement Test
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://students.arts.ubc.ca/advising/degree-requirements/language-requirement/"
+                                                    rel="nofollow">
+                                                    Cantonese to fulfill UBC's foreign language requirement </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="http://learn.utoronto.ca/courses-programs/languages-translation/courses/cantonese"
+                                            rel="nofollow">
+                                            University of Toronto- School of Continuing Studies
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="http://learn.utoronto.ca/courses-programs/languages-translation/certificates"
+                                                    rel="nofollow">
+                                                    Language and Translation Certificates in Cantonese
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+
+                                        <a href="http://www.cuhk.edu.hk/clc/e_cantonese.htm" rel="nofollow">Chinese
+                                            University of Hong Kong</a>
+
+
+                                    </li>
+                                    <li>
+                                        <a href="http://www.hklanguages.com/the-institute/about-us/about-us1.html"
+                                            rel="nofollow">Hong Kong Institute of Languages</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>
+
+                            For a complete list of "Cantonese Programs Around the World", please visit
+                            <a href="https://cantoneselanguageassociation.byu.edu/cantonese-programs-around-the-world/"
+                                rel="nofollow">Cantonese Language Association</a>.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="w3-container w3-padding-16">
+                    <h3 class="w3-text-blue-grey"><b>Community Groups</b></h3>
+                    <div class="w3-container w3-twothird w3-white w3-padding-16">
+                        <ul>
+                            <li>
+
+                                <a href="http://www.meetup.com/San-Francisco-Bay-Area-Cantonese-Enthusiasts/"
+                                    rel="nofollow">The San Francisco Cantonese Enthusiasts</a>
+
+                            </li>
+                            <li>
+                                Facebook groups for Cantonese parents
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/groups/southbaycantoneseparents/?ref=br_rs"
+                                            rel="nofollow">
+                                            Cantonese Parents - SF Bay Area - South Bay
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/groups/CantoneseParents/?ref=br_rs"
+                                            rel="nofollow">
+                                            Cantonese Parents
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="w3-container  w3-padding-16">
+                    <h3 class="w3-text-blue-grey"><b>Cultural Centers and Associations</b></h3>
+                    <div class="w3-container w3-twothird w3-white w3-padding-16">
+                        <ul>
+                            <li>
+
+                                <a href="https://cantoneselanguageassociation.byu.edu/" rel="nofollow">Cantonese
+                                    Language Association</a>
+                            </li>
+                            <li>
+                                <a href="http://cpasf.org/" rel="nofollow">Chinese Progressive Association-San
+                                    Francisco</a>
+                            </li>
+                            <li>
+                                <a href="http://www.chsa.org/" rel="nofollow">Chinese Historical Society of America</a>
+                            </li>
+                            <li>
+                                <a href="http://www.c-c-c.org/" rel="nofollow">Chinese Culture Center-San Francisco</a>
+                            </li>
+                            <li>
+                                <a href="http://www.hkanc.com/" rel="nofollow">Hong Kong Association of Northern
+                                    California</a>
+                            </li>
+                            <li>
+                                <a href="https://nacsainfo11.wordpress.com/2015/04/12/welcome/" rel="nofollow">North
+                                    American Chinese Sociologists Association</a>
+                            </li>
+                            <li>
+                                <a href="http://www.pbs.org/kqed/chinatown/resourceguide/cmmtyorg.html/"
+                                    rel="nofollow">San Francisco Chinatown Resource Guide: Community Organizations</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="w3-container  w3-padding-16">
+                    <h3 class="w3-text-blue-grey"><b>On-Campus Departments</b></h3>
+                    <div class="w3-container w3-twothird w3-white w3-padding-16">
+
+                        <h4>
+                            Chinese Railroad Workers in North America Project: the majority of the workers were
+                            Cantonese speakers</a>
+                        </h4>
+                        <ul>
+                            <li>
+                                <a href="http://web.stanford.edu/group/chineserailroad/cgi-bin/wordpress/people/">People
+                                    in the project</a>
+
+                            </li>
+                            <li>
+
+                                <a href="http://web.stanford.edu/group/chineserailroad/cgi-bin/wordpress/press/">Press
+                                    releases</a>
+
+                            </li>
+                        </ul>
+                        <h4>
+                            Stanford Archaeology Center</a>
+                        </h4>
+                        <ul>
+                            <li>
+
+                                <a href="https://archaeology.stanford.edu/">Stanford Archaeology Center Main Page</a>
+
+                            </li>
+                            <li>
+
+                                <a href="http://events.stanford.edu/events/636/63637/">Past Event about Cantonese
+                                    people: Association Heritage in Early Chinatowns in North America</a>
+
+                            </li>
+                        </ul>
+                        <h4>
+                            Center for East Asian Studies</a>
+                        </h4>
+                        <ul>
+                            <li>
+
+                                <a href="http://ceas.stanford.edu/">CEAS Main Page</a>
+
+                            </li>
+                            <li>
+
+                                <a href="http://ceas.stanford.edu/events/index.php">Upcoming Events</a>
+
+                            </li>
+                            <li>
+
+                                <a href="http://ceas.stanford.edu/students/east-asia-internships.php">East Asia
+                                    Internships</a>
+
+                            </li>
+                        </ul>
+                        <h4>Division of Literatures, Cultures, and Languages</h4>
+                        <ul>
+                            <li>
+
+                                <a href="https://dlcl.stanford.edu/">DLCL Main Page</a>
+
+                            </li>
+                            <li>
+
+                                <a href="https://www.stanford.edu/dept/lc/language/">Stanford Language Center</a>
+
+                            </li>
+                        </ul>
+                        <h4>
+                            East Asian Languages and Cultures</a>
+                        </h4>
+                        <ul>
+                            <li>
+
+                                <a href="http://www.stanford.edu/dept/asianlang/cgi-bin/index.php">EAS Main Page</a>
+
+                            </li>
+                            <li>
+
+                                <a href="http://www.stanford.edu/dept/asianlang/cgi-bin/people/bios/sun_chaofen.php">Professor
+                                    Chaofen Sun</a>
+
+                            </li>
+                        </ul>
+                        <h4>
+                            The Stanford Chinese Program</a>
+                        </h4>
+                        <ul>
+                            <li>
+
+                                <a href="https://language.stanford.edu/programs/chinese">Main Page</a>
+
+                            </li>
+                            <li>
+
+                                <a href="http://www.stanford.edu/dept/asianlang/cgi-bin/people/bios/sun_chaofen.php">Professor
+                                    Chaofen Sun</a>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-container w3-third">
+                        <p class="w3-center">
+                            <img alt=""
+                                src="https://cantonese.sites.stanford.edu/sites/g/files/sbiybj11251/f/styles/large-scaled/public/Quad_tall_palms.png" />
+
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="w3-container  w3-padding-16">
+                    <h3 class="w3-text-blue-grey"><b>Stanford Student Groups</b></h3>
+                    <div class="w3-container w3-twothird w3-white w3-padding-16">
+                        <ul>
+                            <li>
+
+                                <a href="http://www.stanford.edu/group/AASA/">Asian American Students' Association</a>
+                            </li>
+                            <li>
+
+                                <a href="http://hksa.stanford.edu/">Hong Kong Student Association</a>
+
+                            </li>
+                            <li>
+
+                                <a href="http://www.stanford.edu/group/UCAA/cgi-bin/wordpress/">Undergraduate Chinese
+                                    American Association</a>
+
+                            </li>
+                            <li>
+
+                                For a complete list of
+                                <a href="https://a3c.stanford.edu/our-community/undergraduate-student-organizations">
+                                    Asian American student groups, please visit Asian American Activities ( A³C
+                                    ) website
+                                </a>
+
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-             
-           </div>
-        
-        
-         <div class="w3-container  w3-padding-16">
-       <h3 class="w3-text-blue-grey"><b>Stanford Student Groups</b></h3>
-            <div class="w3-container w3-twothird w3-white w3-padding-16">
-              <ul>
-                                                            <li>
-                                                              
-                                                                        <a href="http://www.stanford.edu/group/AASA/">Asian American Students' Association</a>
-                                                            </li>
-                                                            <li>
-                                                    
-                                                                    <a href="http://hksa.stanford.edu/">Hong Kong Student Association</a>
-                                            
-                                                            </li>
-                                                            <li>
-                                         
-                                                                    <a href="http://www.stanford.edu/group/UCAA/cgi-bin/wordpress/">Undergraduate Chinese American Association</a>
-                                  
-                                                            </li>
-                                                            <li>
-                                                  
-                                                                    For a complete list of 
-                                                                    <a href="https://a3c.stanford.edu/our-community/undergraduate-student-organizations">
-                                                                        Asian American student groups, please visit Asian American Activities ( A³C
-                                                                        ) website
-                                                                    </a>
-                                                              
-                                                            </li>
-                                                        </ul>
-                                               
-        
-        </div>      
-           </div>
-        
-        
-    </div>
-  </div>
 
- 
-    
-    
-    
-<br>
-  <br>
-  <div class="w3-container w3-dark-grey w3-padding-32">
-    <div class="w3-row">
-      <div class="w3-container w3-third">
-        <h5 class="w3-bottombar w3-border-green">Contact Info</h5>
-        <p>Address: 521 Memorial Way, Knight Building, Room K313, Stanford, CA 94305-2000</p>
-        <p>Tel: 650-723-0329</p>
-        <p>Email: <a href='mailto:lcheung2@stanford.edu'>lcheung2@stanford.edu</a></p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-16 w3-light-grey">
- <!--   <h4>FOOTER</h4>
+
+
+
+        <br>
+        <br>
+        <div class="w3-container w3-dark-grey w3-padding-32">
+            <div class="w3-row">
+                <div class="w3-container w3-third">
+                    <h5 class="w3-bottombar w3-border-green">Contact Info</h5>
+                    <p>Address: 521 Memorial Way, Knight Building, Room K313, Stanford, CA 94305-2000</p>
+                    <p>Tel: 650-723-0329</p>
+                    <p>Email: <a href='mailto:lcheung2@stanford.edu'>lcheung2@stanford.edu</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-16 w3-light-grey">
+            <!--   <h4>FOOTER</h4>
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-  </footer>
+        </footer>
 
-  <!-- End page content -->
-</div>
+        <!-- End page content -->
+    </div>
 
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
 
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
 
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
 
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
 
 </body>
+
 </html>
