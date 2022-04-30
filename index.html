@@ -1,302 +1,263 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="google-site-verification"
-      content="EIJEYi97vZ7dYQMHolRo0toGXz-QFTianMDVyIQechw"
-    />
-    <link rel="stylesheet" href="css/general.css" type="text/css" />
-    <link rel="stylesheet" href="css/font.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      type="text/css"
-    />
-    <style>
-      html,
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5 {
-        font-family: "Raleway", sans-serif;
-      }
-    </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-823XW1H04E"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-823XW1H04E');
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="EIJEYi97vZ7dYQMHolRo0toGXz-QFTianMDVyIQechw" />
+  <link rel="stylesheet" href="css/general.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css" />
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-823XW1H04E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  <body class="w3-light-grey">
-    <!-- Top container -->
-    <div class="w3-bar w3-top w3-black w3-large" style="z-index: 4">
-      <button
-        class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
-        onclick="w3_open();"
-      >
-        <i class="fa fa-bars"></i>  Menu
-      </button>
-      <span class="w3-bar-item w3-right"> Cantonese Alliance of North America </span>
+    gtag('config', 'G-823XW1H04E');
+  </script>
+</head>
+
+<body class="w3-light-grey">
+  <!-- Top container -->
+  <div class="w3-bar w3-top w3-black w3-large" style="z-index: 4">
+    <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();">
+      <i class="fa fa-bars"></i>  Menu
+    </button>
+    <span class="w3-bar-item w3-right"> Cantonese Alliance of North America </span>
+  </div>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index: 3; width: 300px" id="mySidebar">
+    <br />
+    <div class="w3-container w3-row">
+      <div class="w3-col s4">
+        <!--<img src="/images/logo" class="w3-circle w3-margin-right" style="width:46px">-->
+      </div>
+      <h4>Cantonese Alliance</h4>
+      <a href="mailto:dennig@gmail.com" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
     </div>
+    <hr />
+    <div class="w3-container">
+      <h5>Dashboard</h5>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
+        onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-home fa-fw"></i>  Home</a>
+      <a href="about_canto.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i> 
+        About</a>
+      <a href="community.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Community</a>
+      <a href="heritage.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  Heritage
+        Language</a>
+      <a href="language.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Language
+        Resources</a>
+      <a href="map.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw"></i>  Map of
+        Toisan/Hoisan</a>
+      <a href="courses.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i>  Proficiency
+        Levels</a>
+      <a href="people.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-circle fa-fw"></i>  People</a>
+      <a href="film.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-film fa-fw"></i>  Cantonese through
+        Films</a>
+      <a href="learning.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-file fa-fw"></i>  Other Learning
+        Materials</a>
+      <a href="member.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-address-book fa-fw"></i> 
+        Affiliated Organizations</a>
+      <br /><br />
+    </div>
+  </nav>
 
-    <!-- Sidebar/menu -->
-    <nav
-      class="w3-sidebar w3-collapse w3-white w3-animate-left"
-      style="z-index: 3; width: 300px"
-      id="mySidebar"
-    >
-      <br />
-      <div class="w3-container w3-row">
-        <div class="w3-col s4">
-          <!--<img src="/images/logo" class="w3-circle w3-margin-right" style="width:46px">-->
-        </div>
-        <h4>Cantonese Alliance</h4>
-        <a href="mailto:dennig@gmail.com" class="w3-bar-item w3-button"
-          ><i class="fa fa-envelope"></i
-        ></a>
-      </div>
-      <hr />
-      <div class="w3-container">
-        <h5>Dashboard</h5>
-      </div>
-      <div class="w3-bar-block">
-        <a
-          href="#"
-          class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
-          onclick="w3_close()"
-          title="close menu"
-          ><i class="fa fa-remove fa-fw"></i>  Close Menu</a
-        >
-        <a
-          href="index.html"
-          class="w3-bar-item w3-button w3-padding w3-blue"
-          ><i class="fa fa-home fa-fw"></i>  Home</a
-        >
-        <a href="about_canto.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-bullseye fa-fw"></i>  About</a
-        >
-        <a href="community.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-users fa-fw"></i>  Community</a
-        >
-        <a href="heritage.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-bank fa-fw"></i>  Heritage Language</a
-        >
-        <a href="language.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-diamond fa-fw"></i>  Language Resources</a
-        >
-        <a href="map.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-map fa-fw"></i>  Map of Toisan/Hoisan</a
-        >
-        <a href="courses.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-book fa-fw"></i>  Proficiency Levels</a
-        >
-        <a href="people.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-user-circle fa-fw"></i>  People</a
-        >
-        <a href="film.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-film fa-fw"></i>  Cantonese through Films</a
-        >
-        <a href="learning.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-file fa-fw"></i>  Other Learning Materials</a
-        >
-         <a href="member.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-address-book fa-fw"></i>  Affiliated Organizations</a
-        >
-        <br /><br />
-      </div>
-    </nav>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor: pointer"
+    title="close side menu" id="myOverlay"></div>
 
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div
-      class="w3-overlay w3-hide-large w3-animate-opacity"
-      onclick="w3_close()"
-      style="cursor: pointer"
-      title="close side menu"
-      id="myOverlay"
-    ></div>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left: 300px; margin-top: 43px">
+    <!-- Header -->
+    <header class="w3-container" style="padding-top: 22px; padding-bottom: 22px">
+      <h2>
+        <b>
+          北美粵語同盟 CANTONESE ALLIANCE OF NORTH AMERICA
+        </b>
+      </h2>
+    </header>
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left: 300px; margin-top: 43px">
-      <!-- Header -->
-      <header
-        class="w3-container"
-        style="padding-top: 22px; padding-bottom: 22px"
-      >
-        <h2>
-          <b>
-            北美粵語同盟 CANTONESE ALLIANCE OF NORTH AMERICA
-          </b>
-        </h2>
-       </header>
-
-      <div class="w3-row-padding">
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-teal w3-padding-16">
-            <!-- <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div> -->
-            <div class="w3-right">
-              <a href="about_canto.html" class="w3-button w3-hover-light-grey">
-                <h3>About</h3>
-              </a>
-            </div>
-            <div class="w3-clear"></div>
-            This webpage describes our mission, goals, plans, and contact information.
-          </div>
-        </div>
-          
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-cyan w3-text-white w3-padding-16">
-            <!--  <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div> -->
-            <div class="w3-right">
-              <a href="community.html" class="w3-button w3-hover-light-grey">
-                <h3>Community</h3>
-              </a>
-            </div>
-            <div class="w3-clear"></div>
-            This webpage builds a directory of communities and organizations involved with
-            Cantonese learning. 
-          </div>
-        </div>
-          
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-pink w3-text-white w3-padding-16">
-            <!--  <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div> -->
-            <div class="w3-right">
-              <a href="heritage.html" class="w3-button w3-hover-light-grey">
-                <h3>Heritage Language</h3>
-              </a>
-            </div>
-            <div class="w3-clear"></div>
-            This webpage is devoted to speakers of Cantonese as a heritage
-            language. 
-          </div>
-        </div>
-     </div>
-        
-     <div class="w3-row-padding">    
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-orange w3-text-white w3-padding-16">
-            <!-- <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div> -->
-            <div class="w3-right">
-              <a href="language.html" class="w3-button w3-hover-light-grey">
-                <h3>Language Resources</h3>
-              </a>
-            </div>
-            <div class="w3-clear"></div>
-            This page provides resources on a wide range of topics such as culture, grammar, blogs, and language learning tools.
-          </div>
-        </div>
-          
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-red w3-text-white w3-padding-16">
-            <!--    <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div> -->
-
-            <div class="w3-right">
-              <a href="courses.html" class="w3-button w3-hover-light-grey">
-                <h3>Proficiency Levels</h3>
-              </a>
-            </div>
-
-            <div class="w3-clear"></div>
-            This page describes the key language skills for different levels of
-            proficiency in spoken Cantonese with samples of student production.
-          </div>
-        </div>
-        
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-blue w3-text-white w3-padding-16">
-            <!--    <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div> -->
-            <div class="w3-right">
-              <a href="people.html" class="w3-button w3-hover-light-grey">
-                <h3>People</h3>
-              </a>
-            </div>
-            <div class="w3-clear"></div>
-            This page presents the founder and the support teams of the alliance. You're most welcome to join us!
-        </div>
-      </div>
-     </div>
-     
-    <div class="w3-row-padding"> 
+    <div class="w3-row-padding">
       <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-green w3-text-white w3-padding-16">
-            <!--    <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div> -->
-            <div class="w3-right">
-              <a href="film.html" class="w3-button w3-hover-light-grey">
-                <h3>Cantonese through Films</h3>
-              </a>
-            </div>
-            <div class="w3-clear"></div>
-            This page outlines the history of Hong Kong cinema, discusses best practices, recommends movies, and shares handouts.
+        <div class="w3-container w3-teal w3-padding-16">
+          <!-- <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div> -->
+          <div class="w3-right">
+            <a href="about_canto.html" class="w3-button w3-hover-light-grey">
+              <h3>About</h3>
+            </a>
+          </div>
+          <div class="w3-clear"></div>
+          This webpage describes our mission, goals, plans, and contact information.
         </div>
       </div>
-        
-       <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-amber w3-text-white w3-padding-16">
-            <!--    <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div> -->
-            <div class="w3-right">
-              <a href="learning.html" class="w3-button w3-hover-light-grey">
-                <h3>Other Learning Materials</h3>
-              </a>
-            </div>
-            <div class="w3-clear"></div>
-            This page presents additional resources such as the characteristics of the Cantonese language and the history of SF Chinatown and the characteristics of the Cantonese language.
-        </div>
-      </div>
-        
-      
-       <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-indigo w3-text-white w3-padding-16">
-            <!--    <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div> -->
-            <div class="w3-right">
-              <a href="member.html" class="w3-button w3-hover-light-grey">
-                <h3>Affiliated Organizations</h3>
-              </a>
-            </div>
-            <div class="w3-clear"></div>
-            This page presents affiliated organizations.
-        </div>
-      </div>  
-        
-        </div>
-      </div>
-    
-    
 
-       <!-- End page content -->
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-cyan w3-text-white w3-padding-16">
+          <!--  <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div> -->
+          <div class="w3-right">
+            <a href="community.html" class="w3-button w3-hover-light-grey">
+              <h3>Community</h3>
+            </a>
+          </div>
+          <div class="w3-clear"></div>
+          This webpage builds a directory of communities and organizations involved with
+          Cantonese learning.
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-pink w3-text-white w3-padding-16">
+          <!--  <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div> -->
+          <div class="w3-right">
+            <a href="heritage.html" class="w3-button w3-hover-light-grey">
+              <h3>Heritage Language</h3>
+            </a>
+          </div>
+          <div class="w3-clear"></div>
+          This webpage is devoted to speakers of Cantonese as a heritage
+          language.
+        </div>
+      </div>
     </div>
 
-    <script>
-      // Get the Sidebar
-      var mySidebar = document.getElementById("mySidebar");
+    <div class="w3-row-padding">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-orange w3-text-white w3-padding-16">
+          <!-- <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div> -->
+          <div class="w3-right">
+            <a href="language.html" class="w3-button w3-hover-light-grey">
+              <h3>Language Resources</h3>
+            </a>
+          </div>
+          <div class="w3-clear"></div>
+          This page provides resources on a wide range of topics such as culture, grammar, blogs, and language learning
+          tools.
+        </div>
+      </div>
 
-      // Get the DIV with overlay effect
-      var overlayBg = document.getElementById("myOverlay");
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-red w3-text-white w3-padding-16">
+          <!--    <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div> -->
 
-      // Toggle between showing and hiding the sidebar, and add overlay effect
-      function w3_open() {
-        if (mySidebar.style.display === "block") {
-          mySidebar.style.display = "none";
-          overlayBg.style.display = "none";
-        } else {
-          mySidebar.style.display = "block";
-          overlayBg.style.display = "block";
-        }
-      }
+          <div class="w3-right">
+            <a href="courses.html" class="w3-button w3-hover-light-grey">
+              <h3>Proficiency Levels</h3>
+            </a>
+          </div>
 
-      // Close the sidebar with the close button
-      function w3_close() {
+          <div class="w3-clear"></div>
+          This page describes the key language skills for different levels of
+          proficiency in spoken Cantonese with samples of student production.
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-blue w3-text-white w3-padding-16">
+          <!--    <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div> -->
+          <div class="w3-right">
+            <a href="people.html" class="w3-button w3-hover-light-grey">
+              <h3>People</h3>
+            </a>
+          </div>
+          <div class="w3-clear"></div>
+          This page presents the founder and the support teams of the alliance. You're most welcome to join us!
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-green w3-text-white w3-padding-16">
+          <!--    <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div> -->
+          <div class="w3-right">
+            <a href="film.html" class="w3-button w3-hover-light-grey">
+              <h3>Cantonese through Films</h3>
+            </a>
+          </div>
+          <div class="w3-clear"></div>
+          This page outlines the history of Hong Kong cinema, discusses best practices, recommends movies, and shares
+          handouts.
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-amber w3-text-white w3-padding-16">
+          <!--    <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div> -->
+          <div class="w3-right">
+            <a href="learning.html" class="w3-button w3-hover-light-grey">
+              <h3>Other Learning Materials</h3>
+            </a>
+          </div>
+          <div class="w3-clear"></div>
+          This page presents additional resources such as the characteristics of the Cantonese language and the history
+          of SF Chinatown and the characteristics of the Cantonese language.
+        </div>
+      </div>
+
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-indigo w3-text-white w3-padding-16">
+          <!--    <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div> -->
+          <div class="w3-right">
+            <a href="member.html" class="w3-button w3-hover-light-grey">
+              <h3>Affiliated Organizations</h3>
+            </a>
+          </div>
+          <div class="w3-clear"></div>
+          This page presents affiliated organizations.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- End page content -->
+  </div>
+
+  <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === "block") {
         mySidebar.style.display = "none";
         overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = "block";
+        overlayBg.style.display = "block";
       }
-    </script>
-  </body>
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+  </script>
+</body>
+
 </html>

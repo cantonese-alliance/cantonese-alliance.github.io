@@ -1,284 +1,262 @@
 <!DOCTYPE html>
 <html>
-  <title>People</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/general.css" type="text/css" />
-  <link rel="stylesheet" href="css/font.css" type="text/css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    type="text/css"
-  />
-  <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      font-family: "Raleway", sans-serif;
-    }
-  </style>
-  <body class="w3-light-grey">
-    <!-- Top container -->
-    <div class="w3-bar w3-top w3-black w3-large" style="z-index: 4">
-      <button
-        class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
-        onclick="w3_open();"
-      >
-        <i class="fa fa-bars"></i>  Menu
-      </button>
-      <span class="w3-bar-item w3-right"> Cantonese Alliance </span>
+<title>People</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/general.css" type="text/css" />
+<link rel="stylesheet" href="css/font.css" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  type="text/css" />
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Raleway", sans-serif;
+  }
+</style>
+
+<body class="w3-light-grey">
+  <!-- Top container -->
+  <div class="w3-bar w3-top w3-black w3-large" style="z-index: 4">
+    <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();">
+      <i class="fa fa-bars"></i>  Menu
+    </button>
+    <span class="w3-bar-item w3-right"> Cantonese Alliance </span>
+  </div>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index: 3; width: 300px" id="mySidebar">
+    <br />
+    <div class="w3-container w3-row">
+      <div class="w3-col s4">
+        <!--<img src="/images/logo" class="w3-circle w3-margin-right" style="width:46px">-->
+      </div>
+      <h4>Cantonese Community</h4>
+      <a href="mailto:lcheung2@stanford.edu" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+
     </div>
-
-    <!-- Sidebar/menu -->
-    <nav
-      class="w3-sidebar w3-collapse w3-white w3-animate-left"
-      style="z-index: 3; width: 300px"
-      id="mySidebar"
-    >
-      <br />
-      <div class="w3-container w3-row">
-        <div class="w3-col s4">
-          <!--<img src="/images/logo" class="w3-circle w3-margin-right" style="width:46px">-->
-        </div>
-        <h4>Cantonese Community</h4>
-        <a href="mailto:lcheung2@stanford.edu" class="w3-bar-item w3-button"
-          ><i class="fa fa-envelope"></i
-        ></a>
-
-      </div>
-      <hr />
-      <div class="w3-container">
-        <h5>Dashboard</h5>
-      </div>
-      <div class="w3-bar-block">
-        <a
-          href="#"
-          class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
-          onclick="w3_close()"
-          title="close menu"
-          ><i class="fa fa-remove fa-fw"></i>  Close Menu</a
-        >
-        <a href="index.html" href="#" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-home fa-fw"></i>  Home</a
-        >
-        <a href="about_canto.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-bullseye fa-fw"></i>About</a
-        >
-        <a href="community.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-users fa-fw"></i>  Community</a
-        >
-        <a href="heritage.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-bank fa-fw"></i>  Heritage Language</a
-        >
-        <a href="language.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-diamond fa-fw"></i>  Language Resources</a
-        >
-        <a href="map.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-map fa-fw"></i>  Map of Toisan/Hoisan</a
-        >
-        <a href="courses.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-book fa-fw"></i>  Proficiency Levels</a
-        >
-        <a href="people.html" class="w3-bar-item w3-button w3-padding w3-blue"
-          ><i class="fa fa-user-circle fa-fw"></i>  People</a
-        >
-        <a href="film.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-film fa-fw"></i>  Cantonese through Films</a
-        >
-        <a href="learning.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-file fa-fw"></i>  Other Learning Materials</a
-        >
-         <a href="member.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-address-book fa-fw"></i>  Affiliated Organizations</a
-        >
-        <br /><br />
-      </div>
-    </nav>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div
-      class="w3-overlay w3-hide-large w3-animate-opacity"
-      onclick="w3_close()"
-      style="cursor: pointer"
-      title="close side menu"
-      id="myOverlay"
-    ></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left: 300px; margin-top: 43px">
-      <!-- Header -->
-      <header class="w3-container" style="padding-top: 22px">
-        <div class="w3-container w3-padding-16">
-          <h1><b> People </b></h1>
-        </div>
-      </header>
-      <div class="w3-row">
-        <div class="w3-container">
-          <div class="w3-conatiner w3-padding w3-threequarter">
-            <h2>Founder & President</h2>
-    <p>Hello, I am Sik Lee Dennig or Jēung Sehk-leih (張錫莉) in Cantonese. I was born in Hong Kong to parents from Eastern China. I grew up in a multilingual environment in which Cantonese mingled with different varieties of the Wu language (吳語).  I hold a master’s degree in Psycholinguistics from the University of Alberta, Canada and a Ph.D. in Educational Linguistics from Stanford University, USA. I have taught language and linguistics courses in Hong Kong, Japan, Canada, and the U.S. The one that I'm most passionate about is Cantonese. Preserving Cantonese has become my lifelong mission..</p>
-      <h6>Graduate Education:</h6>
-    <ul>
-      <li>
-        PhD Dissertation: Cheung, Sik Lee. (1991).
-        <i
-          >The Acquisition of Locative Constructions by Cantonese
-          Children.</i
-        >
-        Stanford University, CA, USA.
-      </li>
-      <li>
-        Master Thesis: Cheung, Sik Lee. (1986).
-        <i>Anaphora Production in Cantonese Narration.</i>
-        University of Alberta, Alberta, Canada.
-      </li>
-    </ul>
-    <h6>Professional Certification:</h6>
-    <ul>
-      <li>Certified ILR Cantonese Oral Proficiency Interview Tester</li>
-      <li>Certified ACTFL Chinese Writing Proficiency Tester</li>
-      <li>
-        Certified ACTFL Cantonese Oral Proficiency Interview by Computer
-        Tester
-      </li>
-    </ul>
-            
-   <h6><a href="https://docs.google.com/document/d/1_Gwy-esmUu7mxz0EzK_TbNnxsg-YxpnTDBR0GybAIAE/edit?usp=sharing"rel="nofollow">Research and Conference Presentations</a></h6>
-	
-<h2>Advisor</h2>
- <p>We're very honored to have Professor Marjorie Chan of Ohio State University as our advisor. A pioneer in so many ways, she is also a Cantonese heritage speaker.  Born in Jūngsāan 中山 in the Pearl River Delta, Professor Chan grew up in Vancouver, Canada.  She studied the Jūngsāan variety of Cantonese in her master’s thesis in 1980, co-founded the Cantonese Language Association in 1994, hosted the inaugural Workshop on Innovations in Cantonese Linguistics in 2012, and created a Cantonese course for Mandarin speakers at Ohio State University in 2015.  For a partial list of her accomplishments, please visit <a href="https://u.osu.edu/chan.9/"rel="nofollow">her website</a>. I’ll be interviewing her about her experience growing up in Vancouver’s Chinatown in April. Stay tuned!</p>
-		  
-<div class="w3-row">
+    <hr />
     <div class="w3-container">
-        <div class="w3-conatiner w3-padding w3-threequarter">
-
-<h2>Volunteers</h2>
-
-<h4>Website Manager</h4>
-        <ul>
-            <li>Zhan, Ruohan</a></li> 
-       </ul>   
-
-<h4>Teams</h4>
-	
-<ul>		
-<h6>Cantonese Instructors</h6>
-<ul> 
-       <li>Dennig, Sik Lee</li> 
-       <li>Lau, Alexandra</li>
-       <li>Lum, Zack</li>
-       <li>Tse, Keith</li>
-</ul>  
-<h6>Cantonese Community School Liaison</h6>
-<ul>
-      <li>South Shore Chinese School</li> 
-</ul>
-<h6>Content Development</h6>
-<ul>
-       <li>Cantonese Movies: Dennig, Sik Lee; Lo, Kevin</li>
-       <li>Cantopop: Chung, Edgar; Chen, Yan</li>
-       <li>CantoTalk Music Podcast: Chung, Edgar</li>
-       <li>Environmental Education: Dennig, Paul</li>
-       <li>Pedagogy and Social Justice: Wong, Casey</li> 
-       <li>Vlog: Chan, Brittany</li>
-       <li>Wong, Curtis</li>
-</ul>
-<h6>Content Development Support</h6>
-<ul>
-       <li>Recording: Lo, Kevin</li>
-       <li>Recording: Lum, Zack</li>
-       <li>Translation: Chen, Yan</i>
-       <li>Translation: Waye, Agnes</i>
-</ul>   
-<h6>Curriculum Development</h6>
-<ul>
-       <li>Chan, Brittany</li>
-       <li>Dennig, Sik Lee</li>
-       <li>Quan, Alex</li>
-       <li>South Shore Chinese School</li>
-</ul>		    
-<h6>Fundraising</h6>
-<ul>
-       <li>Li, Alex</li>
-       <li>Lui, Elliott</li>
-       <li>Mass, Lev</li> 
-       <li>Shum, Jared</li>
-</ul>
-<h6>Graphic Design</h6>
-<ul>
-        <li>Kurzynski, Maciej</li>
-	<li>Ma, Jessika</li>
-</ul>
-<h6>Movie Night Cantonese Practice Tutors</h6>
-<ul>
-        <li>Cheng, Janice</li> 
-	<li>Lee, Kitty</li> 
-</ul>
-<h6>Nonprofit</h6>
-<ul>
-    <li>Shum, Jared</li>
-</ul>		  
-<h6>Outreach & Membership</h6>
-<ul>
-      <li>Wing, Juin</li> 
-</ul>
-<h6>Parent Groups Liaison</h6>
-<ul>
-      <li>Wong, KaiYan</li> 
-</ul>
-<h6>Publicist & Social Media</h6>
-<ul>
-      <li>Chan, Brittany</li> 
-</ul>
-<h6>Teacher Training</h6>
-<ul>
-      <li>Dennig, Sik Lee</li> 
-</ul>		    
-<h6>Technology Support</h6>
-<ul>
-      <li>Benson, Andrew</li>  
-      <li>Lau, Mingfei</li>
-</ul>
-
-</ul>
-
-<h2>If you're interested in any of the above roles, please contact Sik Lee Dennig at dennig@gmail.com!</h2>
-
-<div class="w3-container w3-dark-grey w3-padding-16">
-        <div class="w3-row">
-          
-        </div>
-
-      <!-- End page content -->
+      <h5>Dashboard</h5>
     </div>
+    <div class="w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
+        onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+      <a href="index.html" href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw"></i>  Home</a>
+      <a href="about_canto.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>About</a>
+      <a href="community.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Community</a>
+      <a href="heritage.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  Heritage
+        Language</a>
+      <a href="language.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Language
+        Resources</a>
+      <a href="map.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw"></i>  Map of
+        Toisan/Hoisan</a>
+      <a href="courses.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i>  Proficiency
+        Levels</a>
+      <a href="people.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-user-circle fa-fw"></i> 
+        People</a>
+      <a href="film.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-film fa-fw"></i>  Cantonese through
+        Films</a>
+      <a href="learning.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-file fa-fw"></i>  Other Learning
+        Materials</a>
+      <a href="member.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-address-book fa-fw"></i> 
+        Affiliated Organizations</a>
+      <br /><br />
+    </div>
+  </nav>
 
-    <script>
-      // Get the Sidebar
-      var mySidebar = document.getElementById("mySidebar");
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor: pointer"
+    title="close side menu" id="myOverlay"></div>
 
-      // Get the DIV with overlay effect
-      var overlayBg = document.getElementById("myOverlay");
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left: 300px; margin-top: 43px">
+    <!-- Header -->
+    <header class="w3-container" style="padding-top: 22px">
+      <div class="w3-container w3-padding-16">
+        <h1><b> People </b></h1>
+      </div>
+    </header>
+    <div class="w3-row">
+      <div class="w3-container">
+        <div class="w3-conatiner w3-padding w3-threequarter">
+          <h2>Founder & President</h2>
+          <p>Hello, I am Sik Lee Dennig or Jēung Sehk-leih (張錫莉) in Cantonese. I was born in Hong Kong to parents from
+            Eastern China. I grew up in a multilingual environment in which Cantonese mingled with different varieties
+            of the Wu language (吳語). I hold a master’s degree in Psycholinguistics from the University of Alberta,
+            Canada and a Ph.D. in Educational Linguistics from Stanford University, USA. I have taught language and
+            linguistics courses in Hong Kong, Japan, Canada, and the U.S. The one that I'm most passionate about is
+            Cantonese. Preserving Cantonese has become my lifelong mission..</p>
+          <h6>Graduate Education:</h6>
+          <ul>
+            <li>
+              PhD Dissertation: Cheung, Sik Lee. (1991).
+              <i>The Acquisition of Locative Constructions by Cantonese
+                Children.</i>
+              Stanford University, CA, USA.
+            </li>
+            <li>
+              Master Thesis: Cheung, Sik Lee. (1986).
+              <i>Anaphora Production in Cantonese Narration.</i>
+              University of Alberta, Alberta, Canada.
+            </li>
+          </ul>
+          <h6>Professional Certification:</h6>
+          <ul>
+            <li>Certified ILR Cantonese Oral Proficiency Interview Tester</li>
+            <li>Certified ACTFL Chinese Writing Proficiency Tester</li>
+            <li>
+              Certified ACTFL Cantonese Oral Proficiency Interview by Computer
+              Tester
+            </li>
+          </ul>
 
-      // Toggle between showing and hiding the sidebar, and add overlay effect
-      function w3_open() {
-        if (mySidebar.style.display === "block") {
-          mySidebar.style.display = "none";
-          overlayBg.style.display = "none";
-        } else {
-          mySidebar.style.display = "block";
-          overlayBg.style.display = "block";
-        }
-      }
+          <h6><a href="https://docs.google.com/document/d/1_Gwy-esmUu7mxz0EzK_TbNnxsg-YxpnTDBR0GybAIAE/edit?usp=sharing"
+              rel="nofollow">Research and Conference Presentations</a></h6>
 
-      // Close the sidebar with the close button
-      function w3_close() {
-        mySidebar.style.display = "none";
-        overlayBg.style.display = "none";
-      }
-    </script>
-  </body>
+          <h2>Advisor</h2>
+          <p>We're very honored to have Professor Marjorie Chan of Ohio State University as our advisor. A pioneer in so
+            many ways, she is also a Cantonese heritage speaker. Born in Jūngsāan 中山 in the Pearl River Delta, Professor
+            Chan grew up in Vancouver, Canada. She studied the Jūngsāan variety of Cantonese in her master’s thesis in
+            1980, co-founded the Cantonese Language Association in 1994, hosted the inaugural Workshop on Innovations in
+            Cantonese Linguistics in 2012, and created a Cantonese course for Mandarin speakers at Ohio State University
+            in 2015. For a partial list of her accomplishments, please visit <a href="https://u.osu.edu/chan.9/"
+              rel="nofollow">her website</a>. I’ll be interviewing her about her experience growing up in Vancouver’s
+            Chinatown in April. Stay tuned!</p>
+
+          <div class="w3-row">
+            <div class="w3-container">
+              <div class="w3-conatiner w3-padding w3-threequarter">
+
+                <h2>Volunteers</h2>
+
+                <h4>Website Manager</h4>
+                <ul>
+                  <li>Zhan, Ruohan</a></li>
+                </ul>
+
+                <h4>Teams</h4>
+
+                <ul>
+                  <h6>Cantonese Instructors</h6>
+                  <ul>
+                    <li>Dennig, Sik Lee</li>
+                    <li>Lau, Alexandra</li>
+                    <li>Lum, Zack</li>
+                    <li>Tse, Keith</li>
+                  </ul>
+                  <h6>Cantonese Community School Liaison</h6>
+                  <ul>
+                    <li>South Shore Chinese School</li>
+                  </ul>
+                  <h6>Content Development</h6>
+                  <ul>
+                    <li>Cantonese Movies: Dennig, Sik Lee; Lo, Kevin</li>
+                    <li>Cantopop: Chung, Edgar; Chen, Yan</li>
+                    <li>CantoTalk Music Podcast: Chung, Edgar</li>
+                    <li>Environmental Education: Dennig, Paul</li>
+                    <li>Pedagogy and Social Justice: Wong, Casey</li>
+                    <li>Vlog: Chan, Brittany</li>
+                    <li>Wong, Curtis</li>
+                  </ul>
+                  <h6>Content Development Support</h6>
+                  <ul>
+                    <li>Recording: Lo, Kevin</li>
+                    <li>Recording: Lum, Zack</li>
+                    <li>Translation: Chen, Yan</i>
+                    <li>Translation: Waye, Agnes</i>
+                  </ul>
+                  <h6>Curriculum Development</h6>
+                  <ul>
+                    <li>Chan, Brittany</li>
+                    <li>Dennig, Sik Lee</li>
+                    <li>Quan, Alex</li>
+                    <li>South Shore Chinese School</li>
+                  </ul>
+                  <h6>Fundraising</h6>
+                  <ul>
+                    <li>Li, Alex</li>
+                    <li>Lui, Elliott</li>
+                    <li>Mass, Lev</li>
+                    <li>Shum, Jared</li>
+                  </ul>
+                  <h6>Graphic Design</h6>
+                  <ul>
+                    <li>Kurzynski, Maciej</li>
+                    <li>Ma, Jessika</li>
+                  </ul>
+                  <h6>Movie Night Cantonese Practice Tutors</h6>
+                  <ul>
+                    <li>Cheng, Janice</li>
+                    <li>Lee, Kitty</li>
+                  </ul>
+                  <h6>Nonprofit</h6>
+                  <ul>
+                    <li>Shum, Jared</li>
+                  </ul>
+                  <h6>Outreach & Membership</h6>
+                  <ul>
+                    <li>Wing, Juin</li>
+                  </ul>
+                  <h6>Parent Groups Liaison</h6>
+                  <ul>
+                    <li>Wong, KaiYan</li>
+                  </ul>
+                  <h6>Publicist & Social Media</h6>
+                  <ul>
+                    <li>Chan, Brittany</li>
+                  </ul>
+                  <h6>Teacher Training</h6>
+                  <ul>
+                    <li>Dennig, Sik Lee</li>
+                  </ul>
+                  <h6>Technology Support</h6>
+                  <ul>
+                    <li>Benson, Andrew</li>
+                    <li>Lau, Mingfei</li>
+                  </ul>
+
+                </ul>
+
+                <h2>If you're interested in any of the above roles, please contact Sik Lee Dennig at dennig@gmail.com!
+                </h2>
+
+                <div class="w3-container w3-dark-grey w3-padding-16">
+                  <div class="w3-row">
+
+                  </div>
+
+                  <!-- End page content -->
+                </div>
+
+                <script>
+                  // Get the Sidebar
+                  var mySidebar = document.getElementById("mySidebar");
+
+                  // Get the DIV with overlay effect
+                  var overlayBg = document.getElementById("myOverlay");
+
+                  // Toggle between showing and hiding the sidebar, and add overlay effect
+                  function w3_open() {
+                    if (mySidebar.style.display === "block") {
+                      mySidebar.style.display = "none";
+                      overlayBg.style.display = "none";
+                    } else {
+                      mySidebar.style.display = "block";
+                      overlayBg.style.display = "block";
+                    }
+                  }
+
+                  // Close the sidebar with the close button
+                  function w3_close() {
+                    mySidebar.style.display = "none";
+                    overlayBg.style.display = "none";
+                  }
+                </script>
+</body>
+
 </html>

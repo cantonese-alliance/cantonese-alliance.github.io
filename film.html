@@ -1,275 +1,287 @@
 <!DOCTYPE html>
 <html>
-  <title>Cantonese through Films</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/general.css" type="text/css" />
-  <link rel="stylesheet" href="css/font.css" type="text/css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    type="text/css"
-  />
-  <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      font-family: "Raleway", sans-serif;
-    }
-  </style>
-  <body class="w3-light-grey">
-    <!-- Top container -->
-    <div class="w3-bar w3-top w3-black w3-large" style="z-index: 4">
-      <button
-        class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
-        onclick="w3_open();"
-      >
-        <i class="fa fa-bars"></i>  Menu
-      </button>
-      <span class="w3-bar-item w3-right"> Cantonese Alliance </span>
+<title>Cantonese through Films</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/general.css" type="text/css" />
+<link rel="stylesheet" href="css/font.css" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  type="text/css" />
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Raleway", sans-serif;
+  }
+</style>
+
+<body class="w3-light-grey">
+  <!-- Top container -->
+  <div class="w3-bar w3-top w3-black w3-large" style="z-index: 4">
+    <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();">
+      <i class="fa fa-bars"></i>  Menu
+    </button>
+    <span class="w3-bar-item w3-right"> Cantonese Alliance </span>
+  </div>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index: 3; width: 300px" id="mySidebar">
+    <br />
+    <div class="w3-container w3-row">
+      <div class="w3-col s4">
+        <!--<img src="/images/logo" class="w3-circle w3-margin-right" style="width:46px">-->
+      </div>
+      <h4>Cantonese Community</h4>
+      <a href="mailto:lcheung2@stanford.edu" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+
     </div>
+    <hr />
+    <div class="w3-container">
+      <h5>Dashboard</h5>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
+        onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+      <a href="index.html" href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-home fa-fw"></i>  Home</a>
+      <a href="about_canto.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i> 
+        About</a>
+      <a href="community.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Community</a>
+      <a href="heritage.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  Heritage
+        Language</a>
+      <a href="language.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Language
+        Resources</a>
+      <a href="map.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map fa-fw"></i>  Map of
+        Toisan/Hoisan</a>
+      <a href="courses.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i>  Proficiency
+        Levels</a>
+      <a href="people.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user-circle fa-fw"></i>  People</a>
+      <a href="film.html" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-film fa-fw"></i>  Cantonese
+        through Films</a>
+      <a href="learning.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-file fa-fw"></i>  Other Learning
+        Materials</a>
+      <a href="member.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-address-book fa-fw"></i> 
+        Affiliated Organizations</a>
+      <br /><br />
+    </div>
+  </nav>
 
-    <!-- Sidebar/menu -->
-    <nav
-      class="w3-sidebar w3-collapse w3-white w3-animate-left"
-      style="z-index: 3; width: 300px"
-      id="mySidebar"
-    >
-      <br />
-      <div class="w3-container w3-row">
-        <div class="w3-col s4">
-          <!--<img src="/images/logo" class="w3-circle w3-margin-right" style="width:46px">-->
-        </div>
-        <h4>Cantonese Community</h4>
-        <a href="mailto:lcheung2@stanford.edu" class="w3-bar-item w3-button"
-          ><i class="fa fa-envelope"></i
-        ></a>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor: pointer"
+    title="close side menu" id="myOverlay"></div>
 
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left: 300px; margin-top: 43px">
+    <!-- Header -->
+    <header class="w3-container" style="padding-top: 22px">
+      <div class="w3-container w3-padding-16">
+        <h1><b> Cantonese through Films </b></h1>
       </div>
-      <hr />
+    </header>
+    <div class="w3-row">
       <div class="w3-container">
-        <h5>Dashboard</h5>
-      </div>
-      <div class="w3-bar-block">
-        <a
-          href="#"
-          class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
-          onclick="w3_close()"
-          title="close menu"
-          ><i class="fa fa-remove fa-fw"></i>  Close Menu</a
-        >
-        <a href="index.html" href="#" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-home fa-fw"></i>  Home</a
-        >
-        <a href="about_canto.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-bullseye fa-fw"></i>  About</a
-        >
-        <a href="community.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-users fa-fw"></i>  Community</a
-        >
-        <a href="heritage.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-bank fa-fw"></i>  Heritage Language</a
-        >
-        <a href="language.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-diamond fa-fw"></i>  Language Resources</a
-        >
-        <a href="map.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-map fa-fw"></i>  Map of Toisan/Hoisan</a
-        >
-        <a href="courses.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-book fa-fw"></i>  Proficiency Levels</a
-        >
-        <a href="people.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-user-circle fa-fw"></i>  People</a
-        >
-        <a href="film.html" class="w3-bar-item w3-button w3-padding w3-blue"
-          ><i class="fa fa-film fa-fw"></i>  Cantonese through Films</a
-        >
-        <a href="learning.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-file fa-fw"></i>  Other Learning Materials</a
-        >
-         <a href="member.html" class="w3-bar-item w3-button w3-padding"
-          ><i class="fa fa-address-book fa-fw"></i>  Affiliated Organizations</a
-        >
-        <br /><br />
-      </div>
-    </nav>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div
-      class="w3-overlay w3-hide-large w3-animate-opacity"
-      onclick="w3_close()"
-      style="cursor: pointer"
-      title="close side menu"
-      id="myOverlay"
-    ></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left: 300px; margin-top: 43px">
-      <!-- Header -->
-      <header class="w3-container" style="padding-top: 22px">
-        <div class="w3-container w3-padding-16">
-          <h1><b> Cantonese through Films </b></h1>
-        </div>
-      </header>
-      <div class="w3-row">
-       <div class="w3-container">
         <div class="w3-conatiner w3-padding w3-threequarter">
 
-<h4>Curriculum</h4> 
-	  <ul>
-	       <li>If you're interested in creating a language class on popular Cantonese culture, here's a <a href="https://docs.google.com/document/d/17i7i-HW8A8thQg59d788RwQPk5E0XqbZNVYtavjyE2E/edit?usp=sharing/" rel="nofollow">curriculum</a> that I've designed..</li> 
-	  </ul>
-<h4>History of Hong Kong Cinema</h4> 
-          <ul> 
-             <li><a href="https://www.avenueofstars.com.hk/en/hong-kong-movie-history/" rel="nofollow">Avenue of Stars</a>: A Brief History of Hong Kong Movies.</li>  
-             <li><a href="https://www.localiiz.com/post/culture-cinema-history-hong-kong-movies-through-the-ages" rel="nofollow">Hidden Hong Kong</a>: A history of Hong Kong cinema through the ages.</li> 
-             <li><a href="https://assets.cambridge.org/97805217/72358/sample/9780521772358wsn01.pdf" rel="nofollow">The Cinema of Hong Kong</a>: History, Arts and Identity.</li> 
-             <li><a href="https://elc.polyu.edu.hk/inscribe/?p=105" rel="nofollow">The Cinema of Hong Kong</a>: History, Arts and Identity Hong Kong Cinema and Its Interaction with Global Culture. (This is a book review.)</li> 
+          <h4>Curriculum</h4>
+          <ul>
+            <li>If you're interested in creating a language class on popular Cantonese culture, here's a <a
+                href="https://docs.google.com/document/d/17i7i-HW8A8thQg59d788RwQPk5E0XqbZNVYtavjyE2E/edit?usp=sharing/"
+                rel="nofollow">curriculum</a> that I've designed..</li>
           </ul>
-<h4>Movies by Decades:</h4>
-	  <ul>
-			<li>1940s:
-				<ul>
-					<li>《前程萬里》 "Glorious Future" (1941): this is an anti-Japanese war movie released in 1941. It captures the social and historical aspects of Hong Kong at that time. The movie is in Mandarin with portions of it in Cantonese, where Mandarin speakers interacted with local Cantonese speakers.</li>
-				</ul>
-			</li>
-		        <li>1950s:
-				<ul>
-					<li>《危樓春曉》"In the Face of Demolition" (1953)</li>
-					<li>《曼波女郎》"Mambo Girl" (1957)</li>
-				</ul>
-			</li>
-		        <li>1960s:
-				<ul>
-					<li>《南北和》 “The Greatest Civil War on Earth” (1961): With the rapid influx of non-Cantonese speakers from mainland China arriving in Hong kong after WWII, a new generation of young people had grown up by 1960s who did not see themselves as northerners or southerners. In this comedy, two sets of parents who were foes had to learn to reconcile their differences when something happened to their children.</li>
-				</ul>
-			</li>
-		        <li>1970s:
-				<ul>
-					<li>Bruce Lee's kungfu movies: 《唐山大兄》 “The Big Boss” (1971), 《精武門》"Fist of Fury" (1972), 《猛龍過江》"Way of the Dragon" (1972), 《龍爭虎鬥》"Enter the Dragon" (1973)</li>
-					<ul>
-                                            <li>Here's <a href="https://docs.google.com/document/d/1QQ9nWbVfIfXTUCnCLnN-kC5ORLWcHOLq-_WmvDdNsXA/edit?usp=sharing">my handout</a> for 《精武門》"Fist of Fury.</li>
-				            <li><a href="http://www.youtube.com/watch?v=JveOq_Zbt1M" rel="nofollow">Bruce Lee vs. Robert Wall</a> in "Enter the Dragon"</li>
-					    <li><a href="http://www.stanford.edu/~lcheung2/New Cantonese Website/Casey-Interview about Bruce Lee" rel="nofollow">An interview with Casey </a>about his experience with Bruce Lee when growing up in the U.S.
-					    <li><a href="http://www.stanford.edu/~lcheung2/New Cantonese Website/Casey&#039;s interview-translated into Cantonese" rel="nofollow">Casey's interview translated into Cantonese</a></li>
-					</ul>
-					<li>Hui Brothers' comedies: 《鬼馬雙星》"Games Gamblers Play" (1974),《半斤八兩》 "The Private Eyes" (1976)</li>
-					<li>《愛奴》"Intimate Confessions of a Chinese Courtesan" (1972)</li>
-				</ul>
-			</li>
-			<li>1980s-1990s:
-				<ul>
-					<li>《投奔怒海》 "Boat People" (1982): This is an Ann Hui movie that depicts the experiences of Chinese Vitnamese in Vietnam that led to their (attempted) escape from Vitnam."
-					<li>Urban action movies: 《英雄本色》 "A Better Tomorrow" (1986)</a>: This is a "must-watch" movie. It started a new genre of action drama known as heroic bloodshed in 1980s and had influenced Hollywood significantly.&nbsp; However, it is how consistently the movie presents the Chinese traditional value of yih-hei (義氣) that most impresses me.&nbsp; Here's <a href="https://docs.google.com/document/d/19LCG-SAiYHKd0wogRbYEMLu7zmz7jthg8URsMP53qUA/edit?usp=sharing">the handout</a> I've used for a 30-minute Cantonese practice session with intermediate to advanced learners. The handout talks about yih-hei (義氣) and heroic bloodshed.</li>
-					<li>Movies capturing the sentiments of and the arrivals of mainland Chinese in Hong Kong prior to its reversion to China in 1997: 《省港騎兵》"Long Arm of the Law" (1984),《秋天的童話》 “An Autumn’s Tale”(1987),《胭脂扣》 "Rouge" (1987), 《甜蜜蜜》 “Comrade, Almost a Love Story” (1996)</li>
-					<li>《倩女幽魂》"A Chinese Ghost Story" (1987)</li>
-		                        <li>《開心鬼救開心鬼》"Happy Ghost IV" (1990)</li>
-		                        <li>《滾滾紅塵》"Red Dust" (1990)</li>
-		                        <li>《家有囍事》"All's Well, Ends Well" (1992)</li>
-		                        <li>《籠民》"Cageman" (1992)</li>
-		                        <li>《金枝玉葉》"He's a Woman, She's a Man" (1994)</li>
-		                        <li>《愛你愛到殺死你》"Killing Me Tenderly" (1997)</li>
-		                        <li>《香港製造》"Made in Hong Kong" (1997)</li>
-					<li>New wave movies: Wong Kar-wai’s《阿飛正傳 》"Days of Being Wild" (1990) and 《重慶森林》 “Chungking Express” (1994)</li>
-				</ul>
-			</li>
-			<li>2000s:
-				<ul>
-					<li>Character-driven crime movies:《無間道 I, II, III》"Infernal Affairs I, II, III" (2002, 2003, 2003)</li>
-					<ul>
-					<li>"Infernal Affairs I"</a>: Best Cop Movie from Hong
+          <h4>History of Hong Kong Cinema</h4>
+          <ul>
+            <li><a href="https://www.avenueofstars.com.hk/en/hong-kong-movie-history/" rel="nofollow">Avenue of
+                Stars</a>: A Brief History of Hong Kong Movies.</li>
+            <li><a href="https://www.localiiz.com/post/culture-cinema-history-hong-kong-movies-through-the-ages"
+                rel="nofollow">Hidden Hong Kong</a>: A history of Hong Kong cinema through the ages.</li>
+            <li><a href="https://assets.cambridge.org/97805217/72358/sample/9780521772358wsn01.pdf" rel="nofollow">The
+                Cinema of Hong Kong</a>: History, Arts and Identity.</li>
+            <li><a href="https://elc.polyu.edu.hk/inscribe/?p=105" rel="nofollow">The Cinema of Hong Kong</a>: History,
+              Arts and Identity Hong Kong Cinema and Its Interaction with Global Culture. (This is a book review.)</li>
+          </ul>
+          <h4>Movies by Decades:</h4>
+          <ul>
+            <li>1940s:
+              <ul>
+                <li>《前程萬里》 "Glorious Future" (1941): this is an anti-Japanese war movie released in 1941. It captures
+                  the social and historical aspects of Hong Kong at that time. The movie is in Mandarin with portions of
+                  it in Cantonese, where Mandarin speakers interacted with local Cantonese speakers.</li>
+              </ul>
+            </li>
+            <li>1950s:
+              <ul>
+                <li>《危樓春曉》"In the Face of Demolition" (1953)</li>
+                <li>《曼波女郎》"Mambo Girl" (1957)</li>
+              </ul>
+            </li>
+            <li>1960s:
+              <ul>
+                <li>《南北和》 “The Greatest Civil War on Earth” (1961): With the rapid influx of non-Cantonese speakers from
+                  mainland China arriving in Hong kong after WWII, a new generation of young people had grown up by
+                  1960s who did not see themselves as northerners or southerners. In this comedy, two sets of parents
+                  who were foes had to learn to reconcile their differences when something happened to their children.
+                </li>
+              </ul>
+            </li>
+            <li>1970s:
+              <ul>
+                <li>Bruce Lee's kungfu movies: 《唐山大兄》 “The Big Boss” (1971), 《精武門》"Fist of Fury" (1972), 《猛龍過江》"Way of
+                  the Dragon" (1972), 《龍爭虎鬥》"Enter the Dragon" (1973)</li>
+                <ul>
+                  <li>Here's <a
+                      href="https://docs.google.com/document/d/1QQ9nWbVfIfXTUCnCLnN-kC5ORLWcHOLq-_WmvDdNsXA/edit?usp=sharing">my
+                      handout</a> for 《精武門》"Fist of Fury.</li>
+                  <li><a href="http://www.youtube.com/watch?v=JveOq_Zbt1M" rel="nofollow">Bruce Lee vs. Robert Wall</a>
+                    in "Enter the Dragon"</li>
+                  <li><a href="http://www.stanford.edu/~lcheung2/New Cantonese Website/Casey-Interview about Bruce Lee"
+                      rel="nofollow">An interview with Casey </a>about his experience with Bruce Lee when growing up in
+                    the U.S.
+                  <li><a
+                      href="http://www.stanford.edu/~lcheung2/New Cantonese Website/Casey&#039;s interview-translated into Cantonese"
+                      rel="nofollow">Casey's interview translated into Cantonese</a></li>
+                </ul>
+                <li>Hui Brothers' comedies: 《鬼馬雙星》"Games Gamblers Play" (1974),《半斤八兩》 "The Private Eyes" (1976)</li>
+                <li>《愛奴》"Intimate Confessions of a Chinese Courtesan" (1972)</li>
+              </ul>
+            </li>
+            <li>1980s-1990s:
+              <ul>
+                <li>《投奔怒海》 "Boat People" (1982): This is an Ann Hui movie that depicts the experiences of Chinese
+                  Vitnamese in Vietnam that led to their (attempted) escape from Vitnam."
+                <li>Urban action movies: 《英雄本色》 "A Better Tomorrow" (1986)</a>: This is a "must-watch" movie. It started
+                  a new genre of action drama known as heroic bloodshed in 1980s and had influenced Hollywood
+                  significantly.&nbsp; However, it is how consistently the movie presents the Chinese traditional value
+                  of yih-hei (義氣) that most impresses me.&nbsp; Here's <a
+                    href="https://docs.google.com/document/d/19LCG-SAiYHKd0wogRbYEMLu7zmz7jthg8URsMP53qUA/edit?usp=sharing">the
+                    handout</a> I've used for a 30-minute Cantonese practice session with intermediate to advanced
+                  learners. The handout talks about yih-hei (義氣) and heroic bloodshed.</li>
+                <li>Movies capturing the sentiments of and the arrivals of mainland Chinese in Hong Kong prior to its
+                  reversion to China in 1997: 《省港騎兵》"Long Arm of the Law" (1984),《秋天的童話》 “An Autumn’s Tale”(1987),《胭脂扣》
+                  "Rouge" (1987), 《甜蜜蜜》 “Comrade, Almost a Love Story” (1996)</li>
+                <li>《倩女幽魂》"A Chinese Ghost Story" (1987)</li>
+                <li>《開心鬼救開心鬼》"Happy Ghost IV" (1990)</li>
+                <li>《滾滾紅塵》"Red Dust" (1990)</li>
+                <li>《家有囍事》"All's Well, Ends Well" (1992)</li>
+                <li>《籠民》"Cageman" (1992)</li>
+                <li>《金枝玉葉》"He's a Woman, She's a Man" (1994)</li>
+                <li>《愛你愛到殺死你》"Killing Me Tenderly" (1997)</li>
+                <li>《香港製造》"Made in Hong Kong" (1997)</li>
+                <li>New wave movies: Wong Kar-wai’s《阿飛正傳 》"Days of Being Wild" (1990) and 《重慶森林》 “Chungking Express”
+                  (1994)</li>
+              </ul>
+            </li>
+            <li>2000s:
+              <ul>
+                <li>Character-driven crime movies:《無間道 I, II, III》"Infernal Affairs I, II, III" (2002, 2003, 2003)</li>
+                <ul>
+                  <li>"Infernal Affairs I"</a>: Best Cop Movie from Hong
                     Kong</li>
-					</ul>
-					<li>Stephen Chow’s most successful comedies:</li>
-						<ul>
-							<li>《少林足球》Shaolin Soccer” (2001)</a>: One of the funniest Kungfu parodies by Stephen Chow (周星馳)</li>
-						        <li>《功夫》Kung Fu Hustle (2004)</li>
-					       </ul>
-					
-					<li>《花樣年華》</a>: Best artsy movie directed by Wong Kar-Wai (王家衛); winner of Best Actor and Technical Grand Prize at the 2000 Cannes Film Festival.</li>
-					<li>《老港正傳》"Mr. Cinema" (2007)</li>
-                                        <li>《天水圍的日與夜》"The Way We Are" (2008) depicts the life of residents in a public housing estate in Tin Shui Wai, Hong Kong.</li> 
-			<li>2010s - Now:
-				<ul>
-					<li>《歲月神偷》"Echoes of the Rainbow" (2010)</li>
-					<li>Movies based on true stories:</li> 
-						<ul>
-							<li>《桃姐》"A Simple Life" (2011) is based on a true story of a 媽姐 "Amah" in Hong Kong and it also introduces viewers to the nursing homes in Hong Kong. The director, Ann Hui (許鞍華), also directed the critically acclaimed movie 《天水圍的日與夜》"The Way We Are" (2008).</li>
-							<li><a href="https://en.wikipedia.org/wiki/Ann_Hui" rel="nofollow">More movies directed by Ann Hui.</li>
-							<li>《五個小孩的校長》 "Little Big Master" (2015) is a great movie for learning about social issues in Hong Kong, e.g., accessibility to preschool education, income disparity, and ethnic minorities.</li>
-					                <li>《媽媽的神奇小子》 "Zero to Hero" (2021)</a>: This movie was released in August 2021 and is now available on Netflix.  It's based on a true, inspiring story of a Hong Kong Paralympic sprinter.</li>  
-					       </ul>
-                                        <li>《一念無明》 "Mad World" (2016)</li>
-					<li>《明月幾時有》 "Our Time Will Come" (2017): another of Ann Hui's movies.</li>
-					<li>New directors: 陳小娟 Oliver Chan’s《淪落人》 "Still Human" (2018)</li>
-					<li>Parodies of older movies: 《無雙》 “Project Gutenberg” (2018)</a>:&nbsp; Chow Yun-Fat acted in both A Better Tomorrow and Project Gutenberg. The latter can be perceived as a parody of the former.&nbsp; His acting is always great and the story is suspenseful. The special effects are effective. Here's <a href="https://docs.google.com/document/d/1w63O2lGhPj0oX0imx9zw17rli_UtxbfwZbRFgqdF7-w/edit?usp=sharing">the handout </a>I used in my advanced class and later modified to include more basic grammar and vocabulary.</li>
-				        <li>《恭喜八婆》 "Missbehavior" (2019)</li>
-                                </ul>
-			</li>
-			<li>Popular Kungfu movies after Bruce Lee:
-				<ul>
-					<li>《黃飛鴻》 “Once Upon a Time in China I, II, III, IV, V, VI” (1991, 1992, 1993, 1993, 1994, 1997): I like II.</li>
-					<li>《方世玉 》 “Fong Sai Yuk” (1993)</li>
-					<li>《葉問 》 “Ip Man I , II, III, IV” (2008, 2010, 2015, 2019): I like I and III.</li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-</ul>
-	      
-   <h4>Movie Reviews</h4>
+                </ul>
+                <li>Stephen Chow’s most successful comedies:</li>
+                <ul>
+                  <li>《少林足球》Shaolin Soccer” (2001)</a>: One of the funniest Kungfu parodies by Stephen Chow (周星馳)</li>
+                  <li>《功夫》Kung Fu Hustle (2004)</li>
+                </ul>
+
+                <li>《花樣年華》</a>: Best artsy movie directed by Wong Kar-Wai (王家衛); winner of Best Actor and Technical
+                  Grand Prize at the 2000 Cannes Film Festival.</li>
+                <li>《老港正傳》"Mr. Cinema" (2007)</li>
+                <li>《天水圍的日與夜》"The Way We Are" (2008) depicts the life of residents in a public housing estate in Tin
+                  Shui Wai, Hong Kong.</li>
+                <li>2010s - Now:
+                  <ul>
+                    <li>《歲月神偷》"Echoes of the Rainbow" (2010)</li>
+                    <li>Movies based on true stories:</li>
+                    <ul>
+                      <li>《桃姐》"A Simple Life" (2011) is based on a true story of a 媽姐 "Amah" in Hong Kong and it also
+                        introduces viewers to the nursing homes in Hong Kong. The director, Ann Hui (許鞍華), also directed
+                        the critically acclaimed movie 《天水圍的日與夜》"The Way We Are" (2008).</li>
+                      <li><a href="https://en.wikipedia.org/wiki/Ann_Hui" rel="nofollow">More movies directed by Ann
+                          Hui.</li>
+                      <li>《五個小孩的校長》 "Little Big Master" (2015) is a great movie for learning about social issues in Hong
+                        Kong, e.g., accessibility to preschool education, income disparity, and ethnic minorities.</li>
+                      <li>《媽媽的神奇小子》 "Zero to Hero" (2021)</a>: This movie was released in August 2021 and is now
+                        available on Netflix. It's based on a true, inspiring story of a Hong Kong Paralympic sprinter.
+                      </li>
+                    </ul>
+                    <li>《一念無明》 "Mad World" (2016)</li>
+                    <li>《明月幾時有》 "Our Time Will Come" (2017): another of Ann Hui's movies.</li>
+                    <li>New directors: 陳小娟 Oliver Chan’s《淪落人》 "Still Human" (2018)</li>
+                    <li>Parodies of older movies: 《無雙》 “Project Gutenberg” (2018)</a>:&nbsp; Chow Yun-Fat acted in both
+                      A Better Tomorrow and Project Gutenberg. The latter can be perceived as a parody of the
+                      former.&nbsp; His acting is always great and the story is suspenseful. The special effects are
+                      effective. Here's <a
+                        href="https://docs.google.com/document/d/1w63O2lGhPj0oX0imx9zw17rli_UtxbfwZbRFgqdF7-w/edit?usp=sharing">the
+                        handout </a>I used in my advanced class and later modified to include more basic grammar and
+                      vocabulary.</li>
+                    <li>《恭喜八婆》 "Missbehavior" (2019)</li>
+                  </ul>
+                </li>
+                <li>Popular Kungfu movies after Bruce Lee:
+                  <ul>
+                    <li>《黃飛鴻》 “Once Upon a Time in China I, II, III, IV, V, VI” (1991, 1992, 1993, 1993, 1994, 1997): I
+                      like II.</li>
+                    <li>《方世玉 》 “Fong Sai Yuk” (1993)</li>
+                    <li>《葉問 》 “Ip Man I , II, III, IV” (2008, 2010, 2015, 2019): I like I and III.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <h4>Movie Reviews</h4>
           <ul>
             <li>
-                  <a href="http://lovehkfilm.com/reviews.htm" rel="nofollow"
-                    >Reviews of Hong Kong movies</a
-                  >
-                </li>
-             </ul>
-  
-    <h4>Searchable movie database</h4>
-		<ul>
-	<li><a href="https://hkseattle.wixsite.com/cantonesemuseum/introduction">Digital Museum of Cantonese</a>: Created by Dr. Andy Chin of the Education University of Hong Kong. It is a searchable database of Cantonese movies from the mid 1950s.&nbsp; When we can search a special expression (e.g. 新抱), entire sentences with the expression will appear.&nbsp; This is a great tool for language learners.</li>
-   </ul>
-     
-    <h4>Cantonese TV Drama (Coming)</h4>
+              <a href="http://lovehkfilm.com/reviews.htm" rel="nofollow">Reviews of Hong Kong movies</a>
+            </li>
+          </ul>
 
-    <h4>Cantopop (Coming)</h4>
+          <h4>Searchable movie database</h4>
+          <ul>
+            <li><a href="https://hkseattle.wixsite.com/cantonesemuseum/introduction">Digital Museum of Cantonese</a>:
+              Created by Dr. Andy Chin of the Education University of Hong Kong. It is a searchable database of
+              Cantonese movies from the mid 1950s.&nbsp; When we can search a special expression (e.g. 新抱), entire
+              sentences with the expression will appear.&nbsp; This is a great tool for language learners.</li>
+          </ul>
 
-     <div class="w3-container w3-dark-grey w3-padding-16">
-        <div class="w3-row">
-          
-        </div>
-      <!-- End page content -->
-    </div>
+          <h4>Cantonese TV Drama (Coming)</h4>
 
-    <script>
-      // Get the Sidebar
-      var mySidebar = document.getElementById("mySidebar");
+          <h4>Cantopop (Coming)</h4>
 
-      // Get the DIV with overlay effect
-      var overlayBg = document.getElementById("myOverlay");
+          <div class="w3-container w3-dark-grey w3-padding-16">
+            <div class="w3-row">
 
-      // Toggle between showing and hiding the sidebar, and add overlay effect
-      function w3_open() {
-        if (mySidebar.style.display === "block") {
-          mySidebar.style.display = "none";
-          overlayBg.style.display = "none";
-        } else {
-          mySidebar.style.display = "block";
-          overlayBg.style.display = "block";
-        }
-      }
+            </div>
+            <!-- End page content -->
+          </div>
 
-      // Close the sidebar with the close button
-      function w3_close() {
-        mySidebar.style.display = "none";
-        overlayBg.style.display = "none";
-      }
-    </script>
-  </body>
+          <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+              if (mySidebar.style.display === "block") {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+              } else {
+                mySidebar.style.display = "block";
+                overlayBg.style.display = "block";
+              }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+              mySidebar.style.display = "none";
+              overlayBg.style.display = "none";
+            }
+          </script>
+</body>
+
 </html>
